@@ -1,5 +1,0 @@
-<launch>
-  <node name="ros_gst_bridge" pkg="tauv_common" type="ros_gst_bridge" output="screen"/>
-  <param name="pipeline_config" value=" videoconvert ! nvvidconv ! video/x-raw(memory:NVMM), width=1280, height=720, format=NV12 ! nvv4l2h265enc bitrate=5000000 ! rtph265pay config-interval=2 ! udpsink port=5007 host=10.0.0.134"/>
-  <param name="image_topic" value="/zedm_A/zed_node_A/left/image_rect_color"/>
-</launch>

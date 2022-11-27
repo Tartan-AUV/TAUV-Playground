@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@28ccd25a-7857-4d28-b718-41a30ac1af99" />
+        <remote-mappings server-id="python@sftp://gleb@tauvvmgleb:22/home/gleb/Bottle-Detector-Standalone/venv/bin/python3" />
+      </list>
+    </list>
+  </component>
+</project>

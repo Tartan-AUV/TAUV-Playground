@@ -1,4 +1,4 @@
-function [dx, y] = model_linear_damping(t, x, u, L, I, m, v, CG, CB, varargin)
+function [dx, y] = model_linear_damping(t, x, u, L, I, m, v, CG, CB, Ma, varargin)
     dx = []; % static model
 
     rpy = u(1, 1:3);
@@ -6,13 +6,17 @@ function [dx, y] = model_linear_damping(t, x, u, L, I, m, v, CG, CB, varargin)
     ang_v = u(1, 7:9);
     tau = u(1, 10:15);
 
-    I_t = buildInertiaTensor(I(1), I(2), I(3), 0, 0, 0);
+    I_t = buildInertiaTensor(I(1), I(2), I(3), I(4), I(5), I(6));
     M_rb = buildMassMatrix(m, CG, I_t);
     C_rb = buildCoriolisMatrix(m, CG, I_t, lin_v.', ang_v.');
+    [M_a, C_a] = buildAddedMassCoriolisMatrices([lin_v.'; ang_v.'], Ma(1), Ma(2), Ma(3), 0, 0, 0);
     D_lin = diag([L]);
     G = buildGravityMatrix(m, v, CG, CB, rpy.');
 
-    y = (M_rb \ (tau.' - G - C_rb * [lin_v.'; ang_v.'] - D_lin * [lin_v.'; ang_v.'])).';
+    b = tau.' - G - (C_rb + C_a) * [lin_v.'; ang_v.'] - D_lin * [lin_v.'; ang_v.'];
+    M = M_rb + M_a;
+
+    y = (M \ b).';
 end
 
 function [J, J1, J2] = buildEulerMatrix(n2)

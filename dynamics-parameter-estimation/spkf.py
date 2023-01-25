@@ -24,7 +24,7 @@ class SPKFParameterEstimator:
         self._alpha_k_c = self._alpha_k_m
 
         self._cov_process = 1e-4 * np.identity(self._dim_params)
-        self._cov_accel = 1 * np.identity(self._dim_accel)
+        self._cov_accel = 1e-4 * np.identity(self._dim_accel)
 
         self._est_params = est_params
         self._cov_est_params = 1e-12 * np.identity(self._dim_params)
@@ -338,5 +338,5 @@ def plot_errors(ax, intermediate_errors, legend, title):
     ax.set_title(title)
 
 if __name__ == '__main__':
-    # test_constructed_data()
-    test_real_data()
+    test_constructed_data()
+    # test_real_data()

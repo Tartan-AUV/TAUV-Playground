@@ -91,7 +91,7 @@ class AdalmSerialBackend:
         trig = ain.getTrigger()
 
         ain.reset()
-        ctx.calibrateADC()
+        # ctx.calibrateADC()
 
         ain.enableChannel(0, True)
         ain.enableChannel(1, True)

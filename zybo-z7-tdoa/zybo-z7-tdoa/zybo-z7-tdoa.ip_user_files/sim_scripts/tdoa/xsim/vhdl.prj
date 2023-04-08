@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/tdoa/ip/tdoa_rst_i_axis_clk_100M_0/sim/tdoa_rst_i_axis_clk_100M_0.vhd" \
+
+nosort

@@ -6,11 +6,11 @@ import scipy as sp
 bit_rate = 5e2
 n_bits = 10
 lo_freq = 50e3
-hi_freq = 51e3
+hi_freq = 55555
 propagation_speed = 1500
-sample_rate = 0.5e6
+sample_rate = 200e3
 dft_N = 100
-dft_r = 0.999
+dft_r = 0.99
 noise_stddev = 0.1
 bandpass_order = 4
 bandpass_low_freq = 45e3
@@ -64,41 +64,57 @@ def get_samples(source_position, bits):
 
     return sample_times, samples
 
-def sliding_dft(samples, freq):
+def sliding_dft(sample_times, samples, freq):
     n_samples = samples.shape[0]
 
     k = (freq * dft_N) / sample_rate
-    coeff = 0.99 * np.exp((2j * pi * k) / dft_N)
-    print(coeff)
+    coeff = np.exp((2j * pi * k) / dft_N)
 
-    x_buf = np.zeros((dft_N, n_sinks), np.cdouble)
+    x_buf = np.zeros((dft_N, n_sinks), np.double)
     X = np.zeros((n_samples, n_sinks), np.cdouble)
+
+    print(coeff)
 
     for i in range(1, n_samples):
         x_buf[:] = np.roll(x_buf[:], -1, axis=0)
         x_buf[-1] = samples[i]
 
-        X[i] = (x_buf[-1] - x_buf[0] * (dft_r ** dft_N)) + (X[i - 1] * dft_r * coeff)
+        res_re = x_buf[-1] - x_buf[0] * (dft_r ** dft_N) + np.real(X[i - 1] * dft_r * coeff)
+        res_im = np.imag(X[i - 1] * dft_r * coeff)
+
+        X[i] = res_re + res_im*1j
+        # X[i] = (x_buf[-1] - x_buf[0] * (dft_r ** dft_N)) + (X[i - 1] * dft_r * coeff)
 
     out = np.zeros((n_samples, n_sinks), np.cdouble)
 
     for i in range(1, n_samples - 1):
-        out[i] = 0.5 * X[i] - 0.25 * X[i - 1] - 0.25 * X[i + 1]
+        # out[i] = 0.5 * X[i] - 0.25 * X[i - 1] - 0.25 * X[i + 1]
+        out[i] = X[i]
 
-    return out
+    return sample_times[dft_N:], out[dft_N:]
 
 def get_tdoas(sample_times, samples):
-    lo_dfts = sliding_dft(samples, lo_freq)
-    hi_dfts = sliding_dft(samples, hi_freq)
+    lo_dft_times, lo_dfts = sliding_dft(sample_times, samples, lo_freq)
+    hi_dft_times, hi_dfts = sliding_dft(sample_times, samples, hi_freq)
 
     plt.figure()
     for i in range(n_sinks):
-        plt.plot(sample_times[:, i], np.abs(lo_dfts[:, i]))
-        plt.plot(sample_times[:, i], np.abs(hi_dfts[:, i]))
+        plt.plot(lo_dft_times[:, i], np.real(lo_dfts[:, i]))
+        plt.plot(hi_dft_times[:, i], np.real(hi_dfts[:, i]))
 
     plt.figure()
     for i in range(n_sinks):
-        plt.plot(sample_times[:, i], np.abs(hi_dfts[:, i]) > np.abs(lo_dfts[:, i]))
+        plt.plot(lo_dft_times[:, i], np.imag(lo_dfts[:, i]))
+        plt.plot(hi_dft_times[:, i], np.imag(hi_dfts[:, i]))
+
+    plt.figure()
+    for i in range(n_sinks):
+        plt.plot(lo_dft_times[:, i], np.abs(lo_dfts[:, i]) ** 2)
+        plt.plot(hi_dft_times[:, i], np.abs(hi_dfts[:, i]) ** 2)
+
+    plt.figure()
+    for i in range(n_sinks):
+        plt.plot(lo_dft_times[:, i], np.abs(hi_dfts[:, i]) > np.abs(lo_dfts[:, i]))
 
     # TODO: Use transition points to calculate tdoas
     return np.zeros((1, 3))

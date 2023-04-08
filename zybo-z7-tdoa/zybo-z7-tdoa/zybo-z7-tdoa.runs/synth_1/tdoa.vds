@@ -1,0 +1,322 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr  5 16:48:24 2023
+# Process ID: 34888
+# Current directory: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1
+# Command line: vivado -log tdoa.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source tdoa.tcl
+# Log file: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/tdoa.vds
+# Journal file: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/vivado.jou
+# Running On: theo-ubuntu, OS: Linux, CPU Frequency: 2592.000 MHz, CPU Physical cores: 2, Host memory: 8328 MB
+#-----------------------------------------------------------
+source tdoa.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1327.105 ; gain = 0.023 ; free physical = 1432 ; free virtual = 6281
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_xadc_sampler_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_sdft_1_0'.
+WARNING: [IP_Flow 19-2207] Repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_sdft_1_0' already exists; ignoring attempt to add it again.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_sdft_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/theo/Xilinx/Vivado/2022.2/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/utils_1/imports/synth_1/tdoa.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/utils_1/imports/synth_1/tdoa.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top tdoa -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34979
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/theo/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1996.500 ; gain = 372.770 ; free physical = 599 ; free virtual = 5453
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3000.871; parent = 1996.504; children = 1004.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tdoa' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/synth/tdoa.v:12]
+INFO: [Synth 8-6157] synthesizing module 'tdoa_axi_xadc_sampler_0_2' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/synth/tdoa_axi_xadc_sampler_0_2.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_xadc_sampler_v1_0' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:4]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/src/xadc_wiz_0_3/xadc_wiz_0.v:50]
+INFO: [Synth 8-6157] synthesizing module 'XADC' [/home/theo/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136349]
+INFO: [Synth 8-6155] done synthesizing module 'XADC' (0#1) [/home/theo/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:136349]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (0#1) [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/src/xadc_wiz_0_3/xadc_wiz_0.v:50]
+WARNING: [Synth 8-7071] port 'busy_out' of module 'xadc_wiz_0' is unconnected for instance 'xadc' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:56]
+WARNING: [Synth 8-7071] port 'channel_out' of module 'xadc_wiz_0' is unconnected for instance 'xadc' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:56]
+WARNING: [Synth 8-7071] port 'eos_out' of module 'xadc_wiz_0' is unconnected for instance 'xadc' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:56]
+WARNING: [Synth 8-7071] port 'alarm_out' of module 'xadc_wiz_0' is unconnected for instance 'xadc' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:56]
+WARNING: [Synth 8-7023] instance 'xadc' of module 'xadc_wiz_0' has 23 connections declared, but only 19 given [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'axi_xadc_sampler_v1_0' (0#1) [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:4]
+WARNING: [Synth 8-689] width (48) of port connection 'o_axis_out_tdata' does not match port width (42) of module 'axi_xadc_sampler_v1_0' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/synth/tdoa_axi_xadc_sampler_0_2.v:91]
+INFO: [Synth 8-6155] done synthesizing module 'tdoa_axi_xadc_sampler_0_2' (0#1) [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/synth/tdoa_axi_xadc_sampler_0_2.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'tdoa' (0#1) [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/synth/tdoa.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2064.469 ; gain = 440.738 ; free physical = 687 ; free virtual = 5543
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3068.840; parent = 2064.473; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2082.281 ; gain = 458.551 ; free physical = 687 ; free virtual = 5543
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3086.652; parent = 2082.285; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2082.281 ; gain = 458.551 ; free physical = 687 ; free virtual = 5543
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3086.652; parent = 2082.285; children = 1004.367
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2088.219 ; gain = 0.000 ; free physical = 682 ; free virtual = 5537
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/src/xadc_wiz_0_3/xadc_wiz_0.xdc] for cell 'axi_xadc_sampler_0/inst/xadc/inst'
+Finished Parsing XDC File [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/src/xadc_wiz_0_3/xadc_wiz_0.xdc] for cell 'axi_xadc_sampler_0/inst/xadc/inst'
+Parsing XDC File [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sysclk'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports sysclk]'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.srcs/constrs_1/imports/digilent-xdc-master/Zybo-Z7-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tdoa_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tdoa_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/tdoa_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/tdoa_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2172.008 ; gain = 0.000 ; free physical = 612 ; free virtual = 5468
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2172.008 ; gain = 0.000 ; free physical = 612 ; free virtual = 5468
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/theo/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 655 ; free virtual = 5518
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 655 ; free virtual = 5518
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for axi_xadc_sampler_0/inst/xadc/inst. (constraint file  /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/dont_touch.xdc, line 18).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_xadc_sampler_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for axi_xadc_sampler_0/inst/xadc. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 655 ; free virtual = 5518
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 642 ; free virtual = 5503
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               42 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   4 Input    5 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'axi_xadc_sampler_0/inst/o_valid_reg__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:53]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:53]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b4cd/hdl/axi_xadc_sampler_v1_0.v:53]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 619 ; free virtual = 5484
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1409.580; parent = 1204.984; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 511 ; free virtual = 5375
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1499.943; parent = 1295.399; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 510 ; free virtual = 5375
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.076; parent = 1295.532; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 503 ; free virtual = 5367
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.373; parent = 1295.829; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.574; parent = 1296.032; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.590; parent = 1296.048; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.611; parent = 1296.067; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.689; parent = 1296.146; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.689; parent = 1296.146; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.705; parent = 1296.161; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     8|
+|3     |LUT1   |     3|
+|4     |LUT2   |     2|
+|5     |LUT3   |     1|
+|6     |LUT4   |     3|
+|7     |XADC   |     1|
+|8     |FDRE   |    79|
+|9     |FDSE   |     1|
+|10    |IBUF   |    10|
+|11    |OBUF   |    49|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.008 ; gain = 548.277 ; free physical = 508 ; free virtual = 5378
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1500.736; parent = 1296.192; children = 204.596
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3176.379; parent = 2172.012; children = 1004.367
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 3 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 2172.008 ; gain = 458.551 ; free physical = 556 ; free virtual = 5426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 2172.016 ; gain = 548.277 ; free physical = 556 ; free virtual = 5426
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2172.016 ; gain = 0.000 ; free physical = 556 ; free virtual = 5425
+INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2172.016 ; gain = 0.000 ; free physical = 594 ; free virtual = 5459
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 9c7d8cfd
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 14 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2172.016 ; gain = 844.910 ; free physical = 821 ; free virtual = 5686
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.runs/synth_1/tdoa.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file tdoa_utilization_synth.rpt -pb tdoa_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  5 16:49:11 2023...

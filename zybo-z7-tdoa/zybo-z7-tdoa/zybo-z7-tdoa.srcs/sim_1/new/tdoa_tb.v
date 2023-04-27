@@ -30,6 +30,7 @@ localparam ONE_MS = 1000 * ONE_US;
 reg clk;
 reg rst;
 reg [7:0] ja;
+reg [2:0] leds;
 
 initial clk <= 1'b0;
 initial rst <= 1'b1;
@@ -38,19 +39,15 @@ always begin
     #(5 * ONE_NS); clk <= ~clk;
 end
 
-always begin
+initial begin
     #(50 * ONE_NS) rst <= 1'b0;
-    #(ONE_MS) rst <= 1'b1;
 end 
 
 tdoa_wrapper tdoa (
     .i_axis_clk(clk),
     .i_axis_rst(rst),
     .ja(ja),
-    .axis_out0_tready(1),
-    .axis_out1_tready(1),
-    .axis_out2_tready(1),
-    .axis_out3_tready(1)
+    .leds(leds)
 );
 
 endmodule

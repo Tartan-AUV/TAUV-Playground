@@ -123,30 +123,20 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-OPTRACE "create in-memory project" START { }
-  create_project -in_memory -part xc7z020clg400-1
-  set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
-OPTRACE "create in-memory project" END { }
-OPTRACE "set parameters" START { }
+  set_param tcl.collectionResultDisplayLimit 0
+  set_param xicom.use_bs_reader 1
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.runs/impl_1/axi_fsk_demod.dcp
   set_property webtalk.parent_dir /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.cache/wt [current_project]
   set_property parent.project_path /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.xpr [current_project]
-  set_property ip_repo_paths /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod [current_project]
+  set_property ip_repo_paths {
+  /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_channel_demux
+  /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_xadc_sampler_1_0
+  /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod
+} [current_project]
   update_ip_catalog
   set_property ip_output_repo /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-OPTRACE "set parameters" END { }
-OPTRACE "add files" START { }
-  add_files -quiet /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.runs/synth_1/axi_fsk_demod.dcp
-OPTRACE "read constraints: implementation" START { }
-OPTRACE "read constraints: implementation" END { }
-OPTRACE "add files" END { }
-OPTRACE "link_design" START { }
-  link_design -top axi_fsk_demod -part xc7z020clg400-1 
-OPTRACE "link_design" END { }
-OPTRACE "gray box cells" START { }
-OPTRACE "gray box cells" END { }
 OPTRACE "init_design_reports" START { REPORT }
 OPTRACE "init_design_reports" END { }
 OPTRACE "init_design_write_hwdef" START { }

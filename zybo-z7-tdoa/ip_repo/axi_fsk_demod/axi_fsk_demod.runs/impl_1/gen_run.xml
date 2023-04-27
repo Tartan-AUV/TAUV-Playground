@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1680919444">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1682579192">
   <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="axi_fsk_demod_postroute_physopted.rqs"/>
@@ -33,6 +33,10 @@
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="axi_fsk_demod_postroute_physopt_bb.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="axi_fsk_demod_postroute_physopt.dcp"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="axi_fsk_demod_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="axi_fsk_demod_bus_skew_routed.pb"/>
+  <File Type="PA-DCP" Name="axi_fsk_demod.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="axi_fsk_demod_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="axi_fsk_demod_drc_routed.rpx"/>
   <File Type="PA-TCL" Name="axi_fsk_demod.tcl"/>
   <File Type="INIT-TIMING" Name="axi_fsk_demod_timing_summary_init.rpt"/>
   <File Type="OPT-DCP" Name="axi_fsk_demod_opt.dcp"/>
@@ -56,8 +60,6 @@
   <File Type="ROUTE-METHODOLOGY-DRC" Name="axi_fsk_demod_methodology_drc_routed.rpt"/>
   <File Type="PLACE-SIMILARITY" Name="axi_fsk_demod_incremental_reuse_placed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="axi_fsk_demod_methodology_drc_routed.pb"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="axi_fsk_demod_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="axi_fsk_demod_drc_routed.rpx"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="axi_fsk_demod_postplace_pwropt.dcp"/>
   <File Type="PHYSOPT-DCP" Name="axi_fsk_demod_physopt.dcp"/>
   <File Type="PHYSOPT-DRC" Name="axi_fsk_demod_drc_physopted.rpt"/>
@@ -78,7 +80,6 @@
   <File Type="ROUTE-SIMILARITY" Name="axi_fsk_demod_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="axi_fsk_demod_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="axi_fsk_demod_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="axi_fsk_demod_bus_skew_routed.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/cmult.v">
@@ -125,7 +126,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

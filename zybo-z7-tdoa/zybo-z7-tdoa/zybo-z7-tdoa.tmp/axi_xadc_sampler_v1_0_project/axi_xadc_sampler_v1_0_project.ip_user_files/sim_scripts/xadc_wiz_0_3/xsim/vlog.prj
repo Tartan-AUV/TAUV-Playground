@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../axi_xadc_sampler_v1_0_project.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

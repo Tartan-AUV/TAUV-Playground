@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param tcl.collectionResultDisplayLimit 0
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
@@ -82,7 +84,11 @@ set_property parent.project_path /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part digilentinc.com:zybo-z7-20:part0:1.1 [current_project]
-set_property ip_repo_paths /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod [current_project]
+set_property ip_repo_paths {
+  /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_channel_demux
+  /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_xadc_sampler_1_0
+  /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod
+} [current_project]
 update_ip_catalog
 set_property ip_output_repo /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]

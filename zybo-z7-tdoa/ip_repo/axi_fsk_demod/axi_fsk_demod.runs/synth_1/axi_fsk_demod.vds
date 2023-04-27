@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Fri Apr  7 22:03:18 2023
-# Process ID: 44597
+# Start of session at: Thu Apr 27 02:40:29 2023
+# Process ID: 126880
 # Current directory: /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.runs/synth_1
 # Command line: vivado -log axi_fsk_demod.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_fsk_demod.tcl
 # Log file: /media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.runs/synth_1/axi_fsk_demod.vds
@@ -11,8 +11,10 @@
 # Running On: theo-ubuntu, OS: Linux, CPU Frequency: 2592.000 MHz, CPU Physical cores: 2, Host memory: 8328 MB
 #-----------------------------------------------------------
 source axi_fsk_demod.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1325.102 ; gain = 60.508 ; free physical = 2312 ; free virtual = 7407
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1321.398 ; gain = 0.023 ; free physical = 298 ; free virtual = 3211
 INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_channel_demux'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_xadc_sampler_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod'.
 WARNING: [IP_Flow 19-3656] If you move the project, the path for repository '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod' may become invalid. A better location for the repository would be in a path adjacent to the project. (Current project location is '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.runs/synth_1'.)
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/theo/Xilinx/Vivado/2022.2/data/ip'.
@@ -27,61 +29,56 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 44676
+INFO: [Synth 8-7075] Helper process launched with PID 127061
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/theo/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'sample_last', assumed default net type 'wire' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:152]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1670.934 ; gain = 345.832 ; free physical = 1809 ; free virtual = 6904
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1086.947; parent = 881.478; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2671.578; parent = 1673.906; children = 997.672
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:10 . Memory (MB): peak = 1671.230 ; gain = 349.832 ; free physical = 158 ; free virtual = 2743
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1141.804; parent = 923.464; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2734.223; parent = 1674.203; children = 1060.020
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'axi_fsk_demod' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:23]
 INFO: [Synth 8-6157] synthesizing module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:24]
 	Parameter AWIDTH bound to: 32 - type: integer 
 	Parameter BWIDTH bound to: 32 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'cmult' (0#1) [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:24]
-WARNING: [Synth 8-689] width (64) of port connection 'pr' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:113]
-WARNING: [Synth 8-689] width (64) of port connection 'pi' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:114]
-WARNING: [Synth 8-689] width (64) of port connection 'pr' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:128]
-WARNING: [Synth 8-689] width (64) of port connection 'pi' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:129]
+WARNING: [Synth 8-689] width (64) of port connection 'pr' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:127]
+WARNING: [Synth 8-689] width (64) of port connection 'pi' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:128]
+WARNING: [Synth 8-689] width (64) of port connection 'pr' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:142]
+WARNING: [Synth 8-689] width (64) of port connection 'pi' does not match port width (65) of module 'cmult' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:143]
 INFO: [Synth 8-6155] done synthesizing module 'axi_fsk_demod' (0#1) [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:23]
-WARNING: [Synth 8-6014] Unused sequential element commonr2_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:106]
+WARNING: [Synth 8-6014] Unused sequential element commonr2_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:102]
+WARNING: [Synth 8-6014] Unused sequential element s_lo_re_reg[1] was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:123]
+WARNING: [Synth 8-6014] Unused sequential element s_lo_im_reg[1] was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:124]
+WARNING: [Synth 8-6014] Unused sequential element s_hi_re_reg[1] was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:138]
+WARNING: [Synth 8-6014] Unused sequential element s_hi_im_reg[1] was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:139]
+WARNING: [Synth 8-6014] Unused sequential element last_cmult_lo_busy_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:239]
+WARNING: [Synth 8-6014] Unused sequential element last_cmult_hi_busy_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:240]
 WARNING: [Synth 8-7129] Port i_axis_rst in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[47] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[46] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[45] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[44] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[43] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[42] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[41] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[40] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[39] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[38] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[37] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[36] in module axi_fsk_demod is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1741.871 ; gain = 416.770 ; free physical = 1894 ; free virtual = 6990
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1086.947; parent = 881.478; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2739.547; parent = 1741.875; children = 997.672
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 1755.168 ; gain = 433.770 ; free physical = 284 ; free virtual = 2803
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1141.804; parent = 923.464; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2815.191; parent = 1755.172; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1759.684 ; gain = 434.582 ; free physical = 1886 ; free virtual = 6985
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1086.947; parent = 881.478; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2757.359; parent = 1759.688; children = 997.672
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1770.012 ; gain = 448.613 ; free physical = 287 ; free virtual = 2800
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1141.804; parent = 923.464; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2830.035; parent = 1770.016; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1767.688 ; gain = 442.586 ; free physical = 1886 ; free virtual = 6984
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:14 . Memory (MB): peak = 1778.016 ; gain = 456.617 ; free physical = 286 ; free virtual = 2799
 INFO: [Device 21-403] Loading part xc7z020clg400-1
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1086.947; parent = 881.478; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2765.363; parent = 1767.691; children = 997.672
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1141.804; parent = 923.464; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2838.039; parent = 1778.020; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1776.594 ; gain = 451.492 ; free physical = 1845 ; free virtual = 6945
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1086.947; parent = 881.478; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2774.270; parent = 1776.598; children = 997.672
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:17 . Memory (MB): peak = 1802.938 ; gain = 481.539 ; free physical = 186 ; free virtual = 2702
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1169.354; parent = 951.017; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2862.961; parent = 1802.941; children = 1060.020
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
@@ -92,20 +89,25 @@ Detailed RTL Component Info :
 	   2 Input   65 Bit       Adders := 4     
 	   3 Input   33 Bit       Adders := 4     
 	   2 Input   33 Bit       Adders := 2     
-	   2 Input   32 Bit       Adders := 4     
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
 	   2 Input    3 Bit       Adders := 2     
 +---Registers : 
 	               65 Bit    Registers := 14    
+	               64 Bit    Registers := 5     
 	               33 Bit    Registers := 6     
-	               32 Bit    Registers := 37    
-	               28 Bit    Registers := 1     
-	                8 Bit    Registers := 9     
+	               32 Bit    Registers := 32    
+	               30 Bit    Registers := 1     
+	                8 Bit    Registers := 101   
+	                3 Bit    Registers := 2     
 	                1 Bit    Registers := 5     
 +---Multipliers : 
 	              32x33  Multipliers := 6     
 	              32x32  Multipliers := 4     
 +---Muxes : 
-	   2 Input    1 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 111   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -123,24 +125,26 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/pi_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:107]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/multi_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:105]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/pr_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:95]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/commonr1_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:94]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/common_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:83]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/mult0_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:82]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/pi_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:107]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/multi_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:105]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/pr_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:95]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/commonr1_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:94]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/common_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:83]
-WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/mult0_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:82]
-WARNING: [Synth 8-6014] Unused sequential element cmult_hi/mult0_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:82]
-WARNING: [Synth 8-6014] Unused sequential element cmult_lo/mult0_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:82]
-WARNING: [Synth 8-6014] Unused sequential element cmult_lo/mult0_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:82]
-WARNING: [Synth 8-6014] Unused sequential element cmult_lo/mult0_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_lo_re_0_sq_reg' and it is trimmed from '64' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:160]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/pr_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:91]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/multr_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_lo_im_0_sq_reg' and it is trimmed from '64' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:161]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/pi_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:103]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/commonr1_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:90]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/common_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:79]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_lo/mult0_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:78]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_hi_re_0_sq_reg' and it is trimmed from '64' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:162]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/pr_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:91]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/multr_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:89]
+WARNING: [Synth 8-3936] Found unconnected internal register 's_hi_im_0_sq_reg' and it is trimmed from '64' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:163]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/pi_int_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:103]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/commonr1_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:90]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/common_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:79]
+WARNING: [Synth 8-3936] Found unconnected internal register 'cmult_hi/mult0_reg' and it is trimmed from '65' to '47' bits. [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:78]
+WARNING: [Synth 8-6014] Unused sequential element cmult_hi/mult0_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:78]
+WARNING: [Synth 8-6014] Unused sequential element cmult_lo/mult0_reg was removed.  [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:78]
 DSP Report: Generating DSP cmult_hi/multr0, operation Mode is: A''*B2.
-DSP Report: register cmult_lo/addr_reg is absorbed into DSP cmult_hi/multr0.
+DSP Report: register cmult_hi/addr_reg is absorbed into DSP cmult_hi/multr0.
 DSP Report: register cmult_hi/multr0 is absorbed into DSP cmult_hi/multr0.
 DSP Report: register cmult_hi/multr0 is absorbed into DSP cmult_hi/multr0.
 DSP Report: operator cmult_hi/multr0 is absorbed into DSP cmult_hi/multr0.
@@ -148,7 +152,7 @@ DSP Report: operator cmult_hi/multr0 is absorbed into DSP cmult_hi/multr0.
 DSP Report: Generating DSP cmult_hi/multr_reg, operation Mode is: (PCIN>>17)+A2*B''.
 DSP Report: register cmult_hi/ar_ddd_reg is absorbed into DSP cmult_hi/multr_reg.
 DSP Report: register cmult_hi/ar_dddd_reg is absorbed into DSP cmult_hi/multr_reg.
-DSP Report: register cmult_lo/addr_reg is absorbed into DSP cmult_hi/multr_reg.
+DSP Report: register cmult_hi/addr_reg is absorbed into DSP cmult_hi/multr_reg.
 DSP Report: register cmult_hi/multr_reg is absorbed into DSP cmult_hi/multr_reg.
 DSP Report: operator cmult_hi/multr0 is absorbed into DSP cmult_hi/multr_reg.
 DSP Report: operator cmult_hi/multr0 is absorbed into DSP cmult_hi/multr_reg.
@@ -173,7 +177,7 @@ DSP Report: register cmult_hi/mult0_reg is absorbed into DSP cmult_hi/mult0_reg.
 DSP Report: operator cmult_hi/mult00 is absorbed into DSP cmult_hi/mult0_reg.
 DSP Report: operator cmult_hi/mult00 is absorbed into DSP cmult_hi/mult0_reg.
 DSP Report: Generating DSP cmult_hi/common_reg, operation Mode is: (PCIN>>17)+(A2*B2)'.
-DSP Report: register cmult_lo/bi_dd_reg is absorbed into DSP cmult_hi/common_reg.
+DSP Report: register cmult_hi/bi_dd_reg is absorbed into DSP cmult_hi/common_reg.
 DSP Report: register cmult_hi/common_reg is absorbed into DSP cmult_hi/common_reg.
 DSP Report: register cmult_hi/common_reg is absorbed into DSP cmult_hi/common_reg.
 DSP Report: register cmult_hi/mult0_reg is absorbed into DSP cmult_hi/common_reg.
@@ -190,14 +194,14 @@ DSP Report: operator cmult_hi/mult00 is absorbed into DSP cmult_hi/mult00.
 DSP Report: Generating DSP cmult_hi/commonr1_reg, operation Mode is: (PCIN>>17)+(A''*B'')'.
 DSP Report: register cmult_hi/addcommon_reg is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: register cmult_hi/mult0_reg is absorbed into DSP cmult_hi/commonr1_reg.
-DSP Report: register cmult_lo/bi_dd_reg is absorbed into DSP cmult_hi/commonr1_reg.
+DSP Report: register cmult_hi/bi_dd_reg is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: register cmult_hi/mult0_reg is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: register cmult_hi/commonr1_reg is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: register cmult_hi/common_reg is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: operator cmult_hi/mult00 is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: operator cmult_hi/mult00 is absorbed into DSP cmult_hi/commonr1_reg.
 DSP Report: Generating DSP cmult_hi/multi0, operation Mode is: A''*B2.
-DSP Report: register cmult_lo/addi_reg is absorbed into DSP cmult_hi/multi0.
+DSP Report: register cmult_hi/addi_reg is absorbed into DSP cmult_hi/multi0.
 DSP Report: register cmult_hi/multi0 is absorbed into DSP cmult_hi/multi0.
 DSP Report: register cmult_hi/multi0 is absorbed into DSP cmult_hi/multi0.
 DSP Report: operator cmult_hi/multi0 is absorbed into DSP cmult_hi/multi0.
@@ -205,7 +209,7 @@ DSP Report: operator cmult_hi/multi0 is absorbed into DSP cmult_hi/multi0.
 DSP Report: Generating DSP cmult_hi/multi_reg, operation Mode is: (PCIN>>17)+A2*B''.
 DSP Report: register cmult_hi/ai_ddd_reg is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: register cmult_hi/ai_dddd_reg is absorbed into DSP cmult_hi/multi_reg.
-DSP Report: register cmult_lo/addi_reg is absorbed into DSP cmult_hi/multi_reg.
+DSP Report: register cmult_hi/addi_reg is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: register cmult_hi/multi_reg is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: operator cmult_hi/multi0 is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: operator cmult_hi/multi0 is absorbed into DSP cmult_hi/multi_reg.
@@ -222,54 +226,58 @@ DSP Report: register cmult_hi/multi_reg is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: register cmult_hi/multi_reg is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: operator cmult_hi/multi0 is absorbed into DSP cmult_hi/multi_reg.
 DSP Report: operator cmult_hi/multi0 is absorbed into DSP cmult_hi/multi_reg.
-DSP Report: Generating DSP s_hi_im_0_sq, operation Mode is: A''*B''.
-DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: Generating DSP s_hi_im_0_sq, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: Generating DSP s_hi_im_0_sq, operation Mode is: A''*B''.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: Generating DSP s_hi_im_0_sq, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: register s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: operator s_hi_im_0_sq is absorbed into DSP s_hi_im_0_sq.
-DSP Report: Generating DSP s_hi_re_0_sq, operation Mode is: A2*B2.
-DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq.
-DSP Report: register s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: Generating DSP s_hi_re_0_sq, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq.
-DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: Generating DSP s_hi_re_0_sq, operation Mode is: A2*B2.
-DSP Report: register s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: register s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: Generating DSP s_hi_re_0_sq, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq.
-DSP Report: register s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
-DSP Report: operator s_hi_re_0_sq is absorbed into DSP s_hi_re_0_sq.
+DSP Report: Generating DSP s_hi_im_0_sq0, operation Mode is: A''*B''.
+DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: register s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: register s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: Generating DSP s_hi_im_0_sq_reg, operation Mode is: (PCIN>>17)+A''*B''.
+DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_0_sq_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: Generating DSP s_hi_im_0_sq0, operation Mode is: A''*B''.
+DSP Report: register s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: register s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: register s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: register s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq0.
+DSP Report: Generating DSP s_hi_im_0_sq_reg, operation Mode is: (PCIN>>17)+A''*B''.
+DSP Report: register cmult_hi/pi_int_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_reg[0] is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_0_sq_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_0_sq_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: register s_hi_im_0_sq_reg is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: operator s_hi_im_0_sq0 is absorbed into DSP s_hi_im_0_sq_reg.
+DSP Report: Generating DSP s_hi_re_0_sq0, operation Mode is: A2*B2.
+DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: register s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: Generating DSP s_hi_re_0_sq_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: register s_hi_re_0_sq_reg is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: Generating DSP s_hi_re_0_sq0, operation Mode is: A2*B2.
+DSP Report: register s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: register s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq0.
+DSP Report: Generating DSP s_hi_re_0_sq_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register s_hi_re_reg[0] is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: register s_hi_re_0_sq_reg is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: register s_hi_re_0_sq_reg is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq_reg.
+DSP Report: operator s_hi_re_0_sq0 is absorbed into DSP s_hi_re_0_sq_reg.
 DSP Report: Generating DSP cmult_lo/multr0, operation Mode is: A''*B2.
 DSP Report: register cmult_lo/addr_reg is absorbed into DSP cmult_lo/multr0.
 DSP Report: register cmult_lo/multr0 is absorbed into DSP cmult_lo/multr0.
@@ -314,7 +322,7 @@ DSP Report: Generating DSP cmult_lo/mult00, operation Mode is: PCIN+(A''*B'')'.
 DSP Report: register cmult_lo/addcommon_reg is absorbed into DSP cmult_lo/mult00.
 DSP Report: register cmult_lo/mult0_reg is absorbed into DSP cmult_lo/mult00.
 DSP Report: register cmult_lo/mult00 is absorbed into DSP cmult_lo/mult00.
-DSP Report: register cmult_hi/mult0_reg is absorbed into DSP cmult_lo/mult00.
+DSP Report: register cmult_lo/mult0_reg is absorbed into DSP cmult_lo/mult00.
 DSP Report: register cmult_lo/common_reg is absorbed into DSP cmult_lo/mult00.
 DSP Report: operator cmult_lo/mult00 is absorbed into DSP cmult_lo/mult00.
 DSP Report: operator cmult_lo/mult00 is absorbed into DSP cmult_lo/mult00.
@@ -322,7 +330,7 @@ DSP Report: Generating DSP cmult_lo/commonr1_reg, operation Mode is: (PCIN>>17)+
 DSP Report: register cmult_lo/addcommon_reg is absorbed into DSP cmult_lo/commonr1_reg.
 DSP Report: register cmult_lo/mult0_reg is absorbed into DSP cmult_lo/commonr1_reg.
 DSP Report: register cmult_lo/bi_dd_reg is absorbed into DSP cmult_lo/commonr1_reg.
-DSP Report: register cmult_hi/mult0_reg is absorbed into DSP cmult_lo/commonr1_reg.
+DSP Report: register cmult_lo/mult0_reg is absorbed into DSP cmult_lo/commonr1_reg.
 DSP Report: register cmult_lo/commonr1_reg is absorbed into DSP cmult_lo/commonr1_reg.
 DSP Report: register cmult_lo/common_reg is absorbed into DSP cmult_lo/commonr1_reg.
 DSP Report: operator cmult_lo/mult00 is absorbed into DSP cmult_lo/commonr1_reg.
@@ -353,79 +361,59 @@ DSP Report: register cmult_lo/multi_reg is absorbed into DSP cmult_lo/multi_reg.
 DSP Report: register cmult_lo/multi_reg is absorbed into DSP cmult_lo/multi_reg.
 DSP Report: operator cmult_lo/multi0 is absorbed into DSP cmult_lo/multi_reg.
 DSP Report: operator cmult_lo/multi0 is absorbed into DSP cmult_lo/multi_reg.
-DSP Report: Generating DSP s_lo_im_0_sq, operation Mode is: A''*B''.
-DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: Generating DSP s_lo_im_0_sq, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: Generating DSP s_lo_im_0_sq, operation Mode is: A''*B''.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: Generating DSP s_lo_im_0_sq, operation Mode is: (PCIN>>17)+A''*B''.
-DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: register s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: operator s_lo_im_0_sq is absorbed into DSP s_lo_im_0_sq.
-DSP Report: Generating DSP s_lo_re_0_sq, operation Mode is: A2*B2.
-DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq.
-DSP Report: register s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: Generating DSP s_lo_re_0_sq, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq.
-DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: Generating DSP s_lo_re_0_sq, operation Mode is: A2*B2.
-DSP Report: register s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: register s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: Generating DSP s_lo_re_0_sq, operation Mode is: (PCIN>>17)+A2*B2.
-DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq.
-DSP Report: register s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
-DSP Report: operator s_lo_re_0_sq is absorbed into DSP s_lo_re_0_sq.
+DSP Report: Generating DSP s_lo_im_0_sq0, operation Mode is: A''*B''.
+DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: register s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: register s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: Generating DSP s_lo_im_0_sq_reg, operation Mode is: (PCIN>>17)+A''*B''.
+DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_0_sq_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: Generating DSP s_lo_im_0_sq0, operation Mode is: A''*B''.
+DSP Report: register s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: register s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: register s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: register s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq0.
+DSP Report: Generating DSP s_lo_im_0_sq_reg, operation Mode is: (PCIN>>17)+A''*B''.
+DSP Report: register cmult_lo/pi_int_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_reg[0] is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_0_sq_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_0_sq_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: register s_lo_im_0_sq_reg is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: operator s_lo_im_0_sq0 is absorbed into DSP s_lo_im_0_sq_reg.
+DSP Report: Generating DSP s_lo_re_0_sq0, operation Mode is: A2*B2.
+DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: register s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: Generating DSP s_lo_re_0_sq_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: register s_lo_re_0_sq_reg is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: Generating DSP s_lo_re_0_sq0, operation Mode is: A2*B2.
+DSP Report: register s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: register s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq0.
+DSP Report: Generating DSP s_lo_re_0_sq_reg, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register s_lo_re_reg[0] is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: register s_lo_re_0_sq_reg is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: register s_lo_re_0_sq_reg is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq_reg.
+DSP Report: operator s_lo_re_0_sq0 is absorbed into DSP s_lo_re_0_sq_reg.
 WARNING: [Synth 8-7129] Port i_axis_rst in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[47] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[46] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[45] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[44] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[43] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[42] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[41] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[40] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[39] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[38] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[37] in module axi_fsk_demod is either unconnected or has no load
-WARNING: [Synth 8-7129] Port i_axis_in_tdata[36] in module axi_fsk_demod is either unconnected or has no load
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_lo/steps_remaining_reg[0]__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_hi/steps_remaining_reg[0]__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_hi_start_reg/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:214]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:214]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:214]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_lo_start_reg/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:210]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:210]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:210]
 WARNING: [Synth 8-3332] Sequential element (cmult_hi/multr_reg[47]) is unused and will be removed from module axi_fsk_demod.
 WARNING: [Synth 8-3332] Sequential element (cmult_hi/multr_reg[46]) is unused and will be removed from module axi_fsk_demod.
 WARNING: [Synth 8-3332] Sequential element (cmult_hi/multr_reg[45]) is unused and will be removed from module axi_fsk_demod.
@@ -527,25 +515,10 @@ WARNING: [Synth 8-3332] Sequential element (cmult_hi/commonr1_reg[43]) is unused
 WARNING: [Synth 8-3332] Sequential element (cmult_hi/commonr1_reg[42]) is unused and will be removed from module axi_fsk_demod.
 WARNING: [Synth 8-3332] Sequential element (cmult_hi/commonr1_reg[41]) is unused and will be removed from module axi_fsk_demod.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_lo/steps_remaining_reg[2]__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_lo/steps_remaining_reg[1]__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_hi/steps_remaining_reg[2]__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'cmult_hi/steps_remaining_reg[1]__0/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/cmult.v:51]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'in_ready_reg/Q' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:198]
-CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'VCC' [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:198]
-CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v:198]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1556 ; free virtual = 6665
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1332.680; parent = 1127.241; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 155 ; free virtual = 2438
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -568,13 +541,13 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 |axi_fsk_demod | A2*B''                | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
 |axi_fsk_demod | (PCIN>>17)+A2*B''     | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A''*B''               | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A''*B''    | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A''*B''    | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A''*B''               | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A''*B''    | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A''*B''    | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A2*B2                 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A2*B2      | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A2*B2      | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A2*B2                 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A2*B2      | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A2*B2      | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A''*B2                | 18     | 16     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
 |axi_fsk_demod | (PCIN>>17)+A2*B''     | 16     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A2*B''                | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
@@ -588,13 +561,13 @@ DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding R
 |axi_fsk_demod | A2*B''                | 18     | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
 |axi_fsk_demod | (PCIN>>17)+A2*B''     | 18     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A''*B''               | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A''*B''    | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A''*B''    | 15     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A''*B''               | 18     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A''*B''    | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A''*B''    | 18     | 15     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A2*B2                 | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A2*B2      | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A2*B2      | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
 |axi_fsk_demod | A2*B2                 | 18     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
-|axi_fsk_demod | (PCIN>>17)+A2*B2      | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17)+A2*B2      | 18     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
 +--------------+-----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
 
 Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
@@ -606,17 +579,17 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1556 ; free virtual = 6665
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1334.504; parent = 1129.065; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 165 ; free virtual = 2456
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1551 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1334.965; parent = 1129.526; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 164 ; free virtual = 2456
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -634,53 +607,100 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1551 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.137; parent = 1129.698; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 166 ; free virtual = 2448
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1551 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.152; parent = 1129.714; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 166 ; free virtual = 2448
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.246; parent = 1129.808; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 162 ; free virtual = 2454
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.324; parent = 1129.886; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 162 ; free virtual = 2454
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.324; parent = 1129.886; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:39 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 162 ; free virtual = 2454
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.340; parent = 1129.901; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 162 ; free virtual = 2454
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
 ---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++--------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping            | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|axi_fsk_demod | A''*B''                | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A''*B'')'    | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A''*B''                | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A''*B'')'    | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A'*B'                  | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A'*B')'      | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A'*B'                  | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A'*B')'      | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A''*B''                | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A''*B'')'    | 30     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A''*B''                | 17     | 17     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A''*B'')'    | 17     | 18     | -      | -      | 48     | 2    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A'*B'                  | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A'*B')'      | 30     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A'*B'                  | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A'*B')'      | 17     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A''*B                  | 17     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A*B'')'      | 30     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A*B''                  | 17     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A*B'')'      | 0      | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | (A'*B)'                | 17     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | (PCIN>>17+(A*B')')'    | 0      | 0      | -      | -      | 0      | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|axi_fsk_demod | PCIN+(A*B'')'          | 15     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|axi_fsk_demod | (PCIN>>17+(A''*B'')')' | 30     | 0      | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|axi_fsk_demod | A''*B'                 | 17     | 0      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A'*B'')'     | 0      | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A*B''                  | 15     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A*B'')'      | 0      | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A''*B                  | 17     | 18     | -      | -      | 48     | 2    | 0    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A*B'')'      | 30     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A*B''                  | 17     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A*B'')'      | 0      | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | (A'*B)'                | 17     | 15     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | (PCIN>>17+(A*B')')'    | 0      | 0      | -      | -      | 0      | 0    | 1    | -    | -    | -     | 1    | 1    | 
+|axi_fsk_demod | PCIN+(A*B'')'          | 15     | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 1    | 0    | 
+|axi_fsk_demod | (PCIN>>17+(A''*B'')')' | 30     | 0      | -      | -      | 48     | 2    | 2    | -    | -    | -     | 1    | 1    | 
+|axi_fsk_demod | A''*B'                 | 17     | 0      | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A'*B'')'     | 0      | 18     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|axi_fsk_demod | A*B''                  | 15     | 17     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 0    | 
+|axi_fsk_demod | (PCIN>>17+A*B'')'      | 0      | 18     | -      | -      | 48     | 0    | 2    | -    | -    | -     | 0    | 1    | 
++--------------+------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
 
 Report BlackBoxes: 
 +-+--------------+----------+
@@ -689,40 +709,57 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |OBUF |    34|
-+------+-----+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     1|
+|2     |CARRY4  |   168|
+|3     |DSP48E1 |    40|
+|4     |LUT1    |     3|
+|5     |LUT2    |   583|
+|6     |LUT3    |    12|
+|7     |LUT4    |   108|
+|8     |LUT5    |    15|
+|9     |LUT6    |   254|
+|10    |MUXF7   |   104|
+|11    |MUXF8   |    48|
+|12    |FDRE    |  1737|
+|13    |FDSE    |     5|
+|14    |IBUF    |    43|
+|15    |OBUF    |    74|
++------+--------+------+
 
 Report Instance Areas: 
-+------+---------+-------+------+
-|      |Instance |Module |Cells |
-+------+---------+-------+------+
-|1     |top      |       |    34|
-+------+---------+-------+------+
++------+-----------+--------+------+
+|      |Instance   |Module  |Cells |
++------+-----------+--------+------+
+|1     |top        |        |  3195|
+|2     |  cmult_hi |cmult   |   580|
+|3     |  cmult_lo |cmult_0 |   592|
++------+-----------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
-Synthesis current peak Physical Memory [PSS] (MB): peak = 1335.387; parent = 1129.948; children = 205.470
-Synthesis current peak Virtual Memory [VSS] (MB): peak = 2918.332; parent = 1920.660; children = 997.672
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 162 ; free virtual = 2454
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1441.405; parent = 1226.526; children = 218.340
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3049.320; parent = 1989.301; children = 1060.020
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 27 critical warnings and 720 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1920.656 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1920.664 ; gain = 595.555 ; free physical = 1550 ; free virtual = 6660
+Synthesis finished with 0 errors, 0 critical warnings and 774 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1989.297 ; gain = 667.898 ; free physical = 165 ; free virtual = 2458
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 1989.305 ; gain = 667.898 ; free physical = 165 ; free virtual = 2458
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1934.531 ; gain = 0.000 ; free physical = 1663 ; free virtual = 6772
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1989.305 ; gain = 0.000 ; free physical = 261 ; free virtual = 2549
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2012.219 ; gain = 0.000 ; free physical = 1575 ; free virtual = 6684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2034.109 ; gain = 0.000 ; free physical = 181 ; free virtual = 2490
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 7e29d5f8
+Synth Design complete, checksum: baaef354
 INFO: [Common 17-83] Releasing license: Synthesis
-23 Infos, 149 Warnings, 27 Critical Warnings and 0 Errors encountered.
+28 Infos, 133 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 2012.219 ; gain = 687.117 ; free physical = 1780 ; free virtual = 6890
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 2034.109 ; gain = 712.711 ; free physical = 386 ; free virtual = 2695
 INFO: [Common 17-1381] The checkpoint '/media/psf/TAUV-Playground/zybo-z7-tdoa/ip_repo/axi_fsk_demod/axi_fsk_demod.runs/synth_1/axi_fsk_demod.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file axi_fsk_demod_utilization_synth.rpt -pb axi_fsk_demod_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr  7 22:03:58 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 27 02:41:35 2023...

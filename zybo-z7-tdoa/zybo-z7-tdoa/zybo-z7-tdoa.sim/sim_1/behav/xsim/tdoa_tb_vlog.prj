@@ -1,16 +1,26 @@
 # compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/src/xadc_wiz_0_3/xadc_wiz_0.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/7c2b/hdl/axi_xadc_sampler_v1_0.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_2/sim/tdoa_axi_xadc_sampler_0_2.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/3e43/axi_channel_demux.srcs/sources_1/new/axi_channel_demux.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_channel_demux_0_0/sim/tdoa_axi_channel_demux_0_0.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/06b6/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_0/sim/tdoa_axi_fsk_demod_0_0.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_1/sim/tdoa_axi_fsk_demod_0_1.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_2/sim/tdoa_axi_fsk_demod_0_2.v" \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_3/sim/tdoa_axi_fsk_demod_0_3.v" \
+verilog xil_defaultlib  --include "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/ec67/hdl" --include "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/ee60/hdl" --include "/home/theo/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_processing_system7_0_2/sim/tdoa_processing_system7_0_2.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/aa00/axi_channel_demux.srcs/sources_1/new/axi_channel_demux.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_channel_demux_0_1/sim/tdoa_axi_channel_demux_0_1.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/7031/axi_fsk_demod.srcs/sources_1/new/cmult.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/7031/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_4/sim/tdoa_axi_fsk_demod_0_4.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_5/sim/tdoa_axi_fsk_demod_0_5.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_6/sim/tdoa_axi_fsk_demod_0_6.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_fsk_demod_0_7/sim/tdoa_axi_fsk_demod_0_7.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/sim/bd_64f5.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_0/sim/bd_64f5_ila_lib_0.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_1/bd_64f5_g_inst_0_gigantic_mux.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_1/sim/bd_64f5_g_inst_0.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_system_ila_0_0/sim/tdoa_system_ila_0_0.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/src/xadc_wiz_0_3/xadc_wiz_0.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/e8f7/hdl/axi_xadc_sampler_v1_0.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/sim/tdoa_axi_xadc_sampler_0_3.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_util_vector_logic_0_0/sim/tdoa_util_vector_logic_0_0.v" \
 "../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/sim/tdoa.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ipshared/6cd5/led_debug.v" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_led_debug_0_0/sim/tdoa_led_debug_0_0.v" \
 "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/hdl/tdoa_wrapper.v" \
 "../../../../zybo-z7-tdoa.srcs/sim_1/new/tdoa_tb.v" \
 

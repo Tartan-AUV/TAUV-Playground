@@ -1,6 +1,6 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_rst_i_axis_clk_100M_0/sim/tdoa_rst_i_axis_clk_100M_0.vhd" \
+"../../../../zybo-z7-tdoa.ip_user_files/bd/tdoa/ip/tdoa_proc_sys_reset_0_0/sim/tdoa_proc_sys_reset_0_0.vhd" \
 
 # Do not sort compile order
 nosort

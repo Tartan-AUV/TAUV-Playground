@@ -31,20 +31,27 @@ reg clk;
 reg rst;
 
 reg [1:0] channel;
-reg [37:0] counter;
+reg [29:0] counter;
 reg [7:0] sample;
 
-reg [47:0] in_data;
+reg [39:0] in_data;
 reg in_valid = 1'b1;
 
-initial in_data <= 48'b0;
+wire out_valid;
+wire [63:0] out_data;
+wire [1:0] out_channel = out_data[63:62];
+wire [29:0] out_stamp = out_data[61:32];
+wire [15:0] mag_lo = out_data[31:16];
+wire [15:0] mag_hi = out_data[15:0];
+
+initial in_data <= 40'b0;
 initial in_valid <= 1'b1;
 
 reg update;
 initial update <= 1'b0;
 
 initial channel <= 2'b00;
-initial counter <= {38{1'b0}};
+initial counter <= {30{1'b0}};
 initial sample <= {8{1'b0}};
 
 initial clk <= 1'b0;
@@ -55,7 +62,7 @@ always begin
 end
 
 initial begin
-    #(50 * ONE_NS) rst <= 1'b0;
+    #(500 * ONE_NS) rst <= 1'b0;
 end
 
 axi_fsk_demod #(
@@ -70,7 +77,9 @@ axi_fsk_demod #(
     .i_axis_rst(rst),
     .i_axis_out_tready(1'b1),
     .i_axis_in_tdata(in_data),
-    .i_axis_in_tvalid(in_valid)
+    .i_axis_in_tvalid(in_valid),
+    .o_axis_out_tdata(out_data),
+    .o_axis_out_tvalid(out_valid)
 );
 
 always begin

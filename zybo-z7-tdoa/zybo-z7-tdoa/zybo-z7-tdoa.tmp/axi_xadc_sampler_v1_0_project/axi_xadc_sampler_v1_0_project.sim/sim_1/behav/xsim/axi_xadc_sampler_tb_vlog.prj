@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../axi_xadc_sampler_v1_0_project.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.v" \
+
+verilog work  \
+"../../../../../../../ip_repo/axi_xadc_sampler_1_0/hdl/axi_xadc_sampler_v1_0.v" \
+"../../../../../../../ip_repo/axi_xadc_sampler_1_0/hdl/axi_xadc_sampler_tb.v" \
+
+# compile glbl module
+verilog work "glbl.v"
+
+# Do not sort compile order
+nosort

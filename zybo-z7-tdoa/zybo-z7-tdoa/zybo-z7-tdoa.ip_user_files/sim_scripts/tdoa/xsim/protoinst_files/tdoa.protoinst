@@ -57,7 +57,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "i_axis_in_tdata"},
 						"TREADY": { "actual": "o_axis_in_tready"},
 						"TVALID": { "actual": "i_axis_in_tvalid"}
@@ -67,7 +67,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "o_axis_out_tdata"},
 						"TREADY": { "actual": "i_axis_out_tready"},
 						"TVALID": { "actual": "o_axis_out_tvalid"}
@@ -77,7 +77,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "i_axis_in_tdata"},
 						"TREADY": { "actual": "o_axis_in_tready"},
 						"TVALID": { "actual": "i_axis_in_tvalid"}
@@ -87,7 +87,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "o_axis_out_tdata"},
 						"TREADY": { "actual": "i_axis_out_tready"},
 						"TVALID": { "actual": "o_axis_out_tvalid"}
@@ -97,7 +97,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "i_axis_in_tdata"},
 						"TREADY": { "actual": "o_axis_in_tready"},
 						"TVALID": { "actual": "i_axis_in_tvalid"}
@@ -107,7 +107,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "o_axis_out_tdata"},
 						"TREADY": { "actual": "i_axis_out_tready"},
 						"TVALID": { "actual": "o_axis_out_tvalid"}
@@ -117,7 +117,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "i_axis_in_tdata"},
 						"TREADY": { "actual": "o_axis_in_tready"},
 						"TVALID": { "actual": "i_axis_in_tvalid"}
@@ -127,7 +127,7 @@
 					"interface": "xilinx.com:interface:axis:1.0",
 					"ports": {
 						"ACLK": { "actual": "i_axis_clk"},
-						"ARESETN": { "actual": "i_axis_rst"},
+						"ARESET": { "actual": "i_axis_rst"},
 						"TDATA": { "actual": "o_axis_out_tdata"},
 						"TREADY": { "actual": "i_axis_out_tready"},
 						"TVALID": { "actual": "o_axis_out_tvalid"}
@@ -141,6 +141,42 @@
 						"TDATA": { "actual": "o_axis_out_tdata"},
 						"TREADY": { "actual": "i_axis_out_tready"},
 						"TVALID": { "actual": "o_axis_out_tvalid"}
+					}
+				},
+				"/led_debug_0/i_axis_0": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "i_axis_clk"},
+						"ARESET": { "actual": "i_axis_rst"},
+						"TDATA": { "actual": "i_axis_0_tdata"},
+						"TVALID": { "actual": "i_axis_0_tvalid"}
+					}
+				},
+				"/led_debug_0/i_axis_1": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "i_axis_clk"},
+						"ARESET": { "actual": "i_axis_rst"},
+						"TDATA": { "actual": "i_axis_1_tdata"},
+						"TVALID": { "actual": "i_axis_1_tvalid"}
+					}
+				},
+				"/led_debug_0/i_axis_2": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "i_axis_clk"},
+						"ARESET": { "actual": "i_axis_rst"},
+						"TDATA": { "actual": "i_axis_2_tdata"},
+						"TVALID": { "actual": "i_axis_2_tvalid"}
+					}
+				},
+				"/led_debug_0/i_axis_3": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "i_axis_clk"},
+						"ARESET": { "actual": "i_axis_rst"},
+						"TDATA": { "actual": "i_axis_3_tdata"},
+						"TVALID": { "actual": "i_axis_3_tvalid"}
 					}
 				}
 			}

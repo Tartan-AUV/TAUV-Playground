@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"axi_fsk_demod_tb_time_synth.v" \
+"../../../../../axi_fsk_demod.srcs/sim_1/new/axi_fsk_demod_tb.v" \
+
+# Do not sort compile order
+nosort

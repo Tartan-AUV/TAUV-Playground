@@ -83,8 +83,8 @@ def get_delays(reference_times, samples, sample_period, max_delay):
     n_samples = samples.shape[1]
     interp = 1
 
-    # n_fft = 2 ** ceil(log(2 * n_samples - 1) / log(2))
-    n_fft = 2 * n_samples
+    n_fft = 2 ** ceil(log(2 * n_samples - 1) / log(2))
+    # n_fft = 2 * n_samples
 
     ffts = sp.fft.rfft(samples, n=n_fft, axis=1)
     fft_frequencies = sp.fft.rfftfreq(n_fft, d=sample_period)

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Apr 27 02:48:27 2023" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Apr 28 02:32:41 2023" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="digilentinc.com:zybo-z7-20:part0:1.1" DEVICE="7z020" NAME="tdoa" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -365,14 +365,14 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/axi_fsk_demod_0" HWVERSION="1.0" INSTANCE="axi_fsk_demod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
+    <MODULE COREREVISION="20" FULLNAME="/axi_fsk_demod_0" HWVERSION="1.0" INSTANCE="axi_fsk_demod_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="COEFF_A" VALUE="11994"/>
-        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="1"/>
-        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32440"/>
-        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-5632"/>
-        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31947"/>
+        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="-2037"/>
+        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32376"/>
+        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-7847"/>
+        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31476"/>
         <PARAMETER NAME="N" VALUE="100"/>
         <PARAMETER NAME="Component_Name" VALUE="tdoa_axi_fsk_demod_0_4"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -458,14 +458,14 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/axi_fsk_demod_1" HWVERSION="1.0" INSTANCE="axi_fsk_demod_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
+    <MODULE COREREVISION="20" FULLNAME="/axi_fsk_demod_1" HWVERSION="1.0" INSTANCE="axi_fsk_demod_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="COEFF_A" VALUE="11994"/>
-        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="1"/>
-        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32440"/>
-        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-5632"/>
-        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31947"/>
+        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="-2037"/>
+        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32376"/>
+        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-7847"/>
+        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31476"/>
         <PARAMETER NAME="N" VALUE="100"/>
         <PARAMETER NAME="Component_Name" VALUE="tdoa_axi_fsk_demod_0_5"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -551,14 +551,14 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/axi_fsk_demod_2" HWVERSION="1.0" INSTANCE="axi_fsk_demod_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
+    <MODULE COREREVISION="20" FULLNAME="/axi_fsk_demod_2" HWVERSION="1.0" INSTANCE="axi_fsk_demod_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="COEFF_A" VALUE="11994"/>
-        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="1"/>
-        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32440"/>
-        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-5632"/>
-        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31947"/>
+        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="-2037"/>
+        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32376"/>
+        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-7847"/>
+        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31476"/>
         <PARAMETER NAME="N" VALUE="100"/>
         <PARAMETER NAME="Component_Name" VALUE="tdoa_axi_fsk_demod_0_6"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -644,14 +644,14 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="16" FULLNAME="/axi_fsk_demod_3" HWVERSION="1.0" INSTANCE="axi_fsk_demod_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
+    <MODULE COREREVISION="20" FULLNAME="/axi_fsk_demod_3" HWVERSION="1.0" INSTANCE="axi_fsk_demod_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_fsk_demod" VLNV="user.org:user:axi_fsk_demod:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="COEFF_A" VALUE="11994"/>
-        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="1"/>
-        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32440"/>
-        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-5632"/>
-        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31947"/>
+        <PARAMETER NAME="COEFF_B_LO_RE" VALUE="-2037"/>
+        <PARAMETER NAME="COEFF_B_LO_IM" VALUE="32376"/>
+        <PARAMETER NAME="COEFF_B_HI_RE" VALUE="-7847"/>
+        <PARAMETER NAME="COEFF_B_HI_IM" VALUE="31476"/>
         <PARAMETER NAME="N" VALUE="100"/>
         <PARAMETER NAME="Component_Name" VALUE="tdoa_axi_fsk_demod_0_7"/>
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
@@ -737,7 +737,7 @@
         </BUSINTERFACE>
       </BUSINTERFACES>
     </MODULE>
-    <MODULE COREREVISION="20" FULLNAME="/axi_xadc_sampler_0" HWVERSION="1.0" INSTANCE="axi_xadc_sampler_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_xadc_sampler" VLNV="user.org:user:axi_xadc_sampler:1.0">
+    <MODULE COREREVISION="21" FULLNAME="/axi_xadc_sampler_0" HWVERSION="1.0" INSTANCE="axi_xadc_sampler_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_xadc_sampler" VLNV="user.org:user:axi_xadc_sampler:1.0">
       <DOCUMENTS/>
       <PARAMETERS>
         <PARAMETER NAME="Component_Name" VALUE="tdoa_axi_xadc_sampler_0_3"/>
@@ -1981,12 +1981,12 @@
             <CONNECTION INSTANCE="system_ila_0" PORT="clk"/>
             <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
             <CONNECTION INSTANCE="proc_sys_reset_0" PORT="slowest_sync_clk"/>
-            <CONNECTION INSTANCE="axi_xadc_sampler_0" PORT="i_axis_clk"/>
             <CONNECTION INSTANCE="led_debug_0" PORT="i_axis_clk"/>
             <CONNECTION INSTANCE="axi_fsk_demod_0" PORT="i_axis_clk"/>
             <CONNECTION INSTANCE="axi_fsk_demod_1" PORT="i_axis_clk"/>
             <CONNECTION INSTANCE="axi_fsk_demod_2" PORT="i_axis_clk"/>
             <CONNECTION INSTANCE="axi_fsk_demod_3" PORT="i_axis_clk"/>
+            <CONNECTION INSTANCE="axi_xadc_sampler_0" PORT="i_axis_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -6255,12 +6255,12 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_channel_demux_0" PORT="i_axis_rst"/>
             <CONNECTION INSTANCE="system_ila_0" PORT="probe0"/>
-            <CONNECTION INSTANCE="axi_xadc_sampler_0" PORT="i_axis_rst"/>
             <CONNECTION INSTANCE="led_debug_0" PORT="i_axis_rst"/>
             <CONNECTION INSTANCE="axi_fsk_demod_0" PORT="i_axis_rst"/>
             <CONNECTION INSTANCE="axi_fsk_demod_1" PORT="i_axis_rst"/>
             <CONNECTION INSTANCE="axi_fsk_demod_2" PORT="i_axis_rst"/>
             <CONNECTION INSTANCE="axi_fsk_demod_3" PORT="i_axis_rst"/>
+            <CONNECTION INSTANCE="axi_xadc_sampler_0" PORT="i_axis_rst"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

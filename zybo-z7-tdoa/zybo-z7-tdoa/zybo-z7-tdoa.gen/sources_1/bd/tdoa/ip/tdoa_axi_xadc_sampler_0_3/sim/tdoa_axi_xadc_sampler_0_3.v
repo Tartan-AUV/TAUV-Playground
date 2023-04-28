@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:axi_xadc_sampler:1.0
-// IP Revision: 20
+// IP Revision: 21
 
 `timescale 1ns/1ps
 

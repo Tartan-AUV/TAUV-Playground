@@ -3,13 +3,11 @@ from math import pi
 
 lo_freq = 50e3
 hi_freq = 55555
-sample_freq = 200e3
+sample_freq = 192307
 N = 100
 r = 0.99
 n_digits = 16
 scaling_factor_15 = 2 ** 15
-scaling_factor_12 = 2 ** 12
-scaling_factor_7 = 2 ** 7
 
 
 def main():

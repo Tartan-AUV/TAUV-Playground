@@ -126,7 +126,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f4cd7562</spirit:value>
+            <spirit:value>8d33dda9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -142,7 +142,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>f4cd7562</spirit:value>
+            <spirit:value>8d33dda9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -300,7 +300,7 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>COEFF_A</spirit:name>
         <spirit:displayName>Coeff A</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_A">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_A">11994</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>COEFF_B_LO_RE</spirit:name>
@@ -310,22 +310,22 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>COEFF_B_LO_IM</spirit:name>
         <spirit:displayName>Coeff B Lo Im</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_LO_IM">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_LO_IM">32440</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>COEFF_B_HI_RE</spirit:name>
         <spirit:displayName>Coeff B Hi Re</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_HI_RE">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_HI_RE">-5632</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>COEFF_B_HI_IM</spirit:name>
         <spirit:displayName>Coeff B Hi Im</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_HI_IM">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.COEFF_B_HI_IM">31947</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>N</spirit:name>
         <spirit:displayName>N</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.N">10</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.N">100</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -339,7 +339,7 @@
       <spirit:file>
         <spirit:name>axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_84e83d2b</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_23c6370c</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -382,7 +382,7 @@
     <spirit:parameter>
       <spirit:name>COEFF_A</spirit:name>
       <spirit:displayName>Coeff A</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_A">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_A">11994</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>COEFF_B_LO_RE</spirit:name>
@@ -392,22 +392,22 @@
     <spirit:parameter>
       <spirit:name>COEFF_B_LO_IM</spirit:name>
       <spirit:displayName>Coeff B Lo Im</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_LO_IM">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_LO_IM">32440</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>COEFF_B_HI_RE</spirit:name>
       <spirit:displayName>Coeff B Hi Re</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_HI_RE">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_HI_RE">-5632</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>COEFF_B_HI_IM</spirit:name>
       <spirit:displayName>Coeff B Hi Im</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_HI_IM">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.COEFF_B_HI_IM">31947</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>N</spirit:name>
       <spirit:displayName>N</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.N">10</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.N">100</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -422,16 +422,16 @@
       </xilinx:taxonomies>
       <xilinx:displayName>axi_fsk_demod_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>16</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-04-27T06:46:27Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>20</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-04-28T05:31:43Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="37edcb1c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="1378d581"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a73d309e"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="6d11254b"/>
-      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="442bd601"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="c38ca744"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="dbe77bba"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="a1dfa2e0"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -16,12 +16,12 @@
       "system_ila_0": "",
       "util_vector_logic_0": "",
       "proc_sys_reset_0": "",
-      "axi_xadc_sampler_0": "",
       "led_debug_0": "",
       "axi_fsk_demod_0": "",
       "axi_fsk_demod_1": "",
       "axi_fsk_demod_2": "",
-      "axi_fsk_demod_3": ""
+      "axi_fsk_demod_3": "",
+      "axi_xadc_sampler_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1478,12 +1478,6 @@
         "xci_path": "ip/tdoa_proc_sys_reset_0_0/tdoa_proc_sys_reset_0_0.xci",
         "inst_hier_path": "proc_sys_reset_0"
       },
-      "axi_xadc_sampler_0": {
-        "vlnv": "user.org:user:axi_xadc_sampler:1.0",
-        "xci_name": "tdoa_axi_xadc_sampler_0_3",
-        "xci_path": "ip/tdoa_axi_xadc_sampler_0_3/tdoa_axi_xadc_sampler_0_3.xci",
-        "inst_hier_path": "axi_xadc_sampler_0"
-      },
       "led_debug_0": {
         "vlnv": "user.org:user:led_debug:1.0",
         "xci_name": "tdoa_led_debug_0_0",
@@ -1500,13 +1494,16 @@
             "value": "11994"
           },
           "COEFF_B_HI_IM": {
-            "value": "31947"
+            "value": "31476"
           },
           "COEFF_B_HI_RE": {
-            "value": "-5632"
+            "value": "-7847"
           },
           "COEFF_B_LO_IM": {
-            "value": "32440"
+            "value": "32376"
+          },
+          "COEFF_B_LO_RE": {
+            "value": "-2037"
           },
           "N": {
             "value": "100"
@@ -1523,13 +1520,16 @@
             "value": "11994"
           },
           "COEFF_B_HI_IM": {
-            "value": "31947"
+            "value": "31476"
           },
           "COEFF_B_HI_RE": {
-            "value": "-5632"
+            "value": "-7847"
           },
           "COEFF_B_LO_IM": {
-            "value": "32440"
+            "value": "32376"
+          },
+          "COEFF_B_LO_RE": {
+            "value": "-2037"
           },
           "N": {
             "value": "100"
@@ -1546,13 +1546,16 @@
             "value": "11994"
           },
           "COEFF_B_HI_IM": {
-            "value": "31947"
+            "value": "31476"
           },
           "COEFF_B_HI_RE": {
-            "value": "-5632"
+            "value": "-7847"
           },
           "COEFF_B_LO_IM": {
-            "value": "32440"
+            "value": "32376"
+          },
+          "COEFF_B_LO_RE": {
+            "value": "-2037"
           },
           "N": {
             "value": "100"
@@ -1569,18 +1572,27 @@
             "value": "11994"
           },
           "COEFF_B_HI_IM": {
-            "value": "31947"
+            "value": "31476"
           },
           "COEFF_B_HI_RE": {
-            "value": "-5632"
+            "value": "-7847"
           },
           "COEFF_B_LO_IM": {
-            "value": "32440"
+            "value": "32376"
+          },
+          "COEFF_B_LO_RE": {
+            "value": "-2037"
           },
           "N": {
             "value": "100"
           }
         }
+      },
+      "axi_xadc_sampler_0": {
+        "vlnv": "user.org:user:axi_xadc_sampler:1.0",
+        "xci_name": "tdoa_axi_xadc_sampler_0_3",
+        "xci_path": "ip/tdoa_axi_xadc_sampler_0_3/tdoa_axi_xadc_sampler_0_3.xci",
+        "inst_hier_path": "axi_xadc_sampler_0"
       }
     },
     "interface_nets": {
@@ -1691,12 +1703,12 @@
           "util_vector_logic_0/Res",
           "axi_channel_demux_0/i_axis_rst",
           "system_ila_0/probe0",
-          "axi_xadc_sampler_0/i_axis_rst",
           "led_debug_0/i_axis_rst",
           "axi_fsk_demod_0/i_axis_rst",
           "axi_fsk_demod_1/i_axis_rst",
           "axi_fsk_demod_2/i_axis_rst",
-          "axi_fsk_demod_3/i_axis_rst"
+          "axi_fsk_demod_3/i_axis_rst",
+          "axi_xadc_sampler_0/i_axis_rst"
         ],
         "hdl_attributes": {
           "DEBUG": {
@@ -1721,12 +1733,12 @@
           "system_ila_0/clk",
           "processing_system7_0/M_AXI_GP0_ACLK",
           "proc_sys_reset_0/slowest_sync_clk",
-          "axi_xadc_sampler_0/i_axis_clk",
           "led_debug_0/i_axis_clk",
           "axi_fsk_demod_0/i_axis_clk",
           "axi_fsk_demod_1/i_axis_clk",
           "axi_fsk_demod_2/i_axis_clk",
-          "axi_fsk_demod_3/i_axis_clk"
+          "axi_fsk_demod_3/i_axis_clk",
+          "axi_xadc_sampler_0/i_axis_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

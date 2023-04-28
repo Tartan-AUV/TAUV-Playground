@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:axi_fsk_demod:1.0
-// IP Revision: 16
+// IP Revision: 20
 
 `timescale 1ns/1ps
 
@@ -88,10 +88,10 @@ output wire [63 : 0] o_axis_out_tdata;
 
   axi_fsk_demod #(
     .COEFF_A(11994),
-    .COEFF_B_LO_RE(1),
-    .COEFF_B_LO_IM(32440),
-    .COEFF_B_HI_RE(-5632),
-    .COEFF_B_HI_IM(31947),
+    .COEFF_B_LO_RE(-2037),
+    .COEFF_B_LO_IM(32376),
+    .COEFF_B_HI_RE(-7847),
+    .COEFF_B_HI_IM(31476),
     .N(100)
   ) inst (
     .i_axis_clk(i_axis_clk),

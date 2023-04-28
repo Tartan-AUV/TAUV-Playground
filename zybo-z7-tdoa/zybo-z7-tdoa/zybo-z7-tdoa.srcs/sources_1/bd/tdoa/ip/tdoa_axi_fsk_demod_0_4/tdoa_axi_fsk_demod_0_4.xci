@@ -4,24 +4,24 @@
     "xci_name": "tdoa_axi_fsk_demod_0_4",
     "cell_name": "axi_fsk_demod_0",
     "component_reference": "user.org:user:axi_fsk_demod:1.0",
-    "ip_revision": "16",
+    "ip_revision": "20",
     "gen_directory": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_fsk_demod_0_4",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "tdoa_axi_fsk_demod_0_4", "resolve_type": "user", "usage": "all" } ],
         "COEFF_A": [ { "value": "11994", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "COEFF_B_LO_RE": [ { "value": "1", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "COEFF_B_LO_IM": [ { "value": "32440", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "COEFF_B_HI_RE": [ { "value": "-5632", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "COEFF_B_HI_IM": [ { "value": "31947", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_LO_RE": [ { "value": "-2037", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_LO_IM": [ { "value": "32376", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_HI_RE": [ { "value": "-7847", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "COEFF_B_HI_IM": [ { "value": "31476", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "N": [ { "value": "100", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ]
       },
       "model_parameters": {
         "COEFF_A": [ { "value": "11994", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "COEFF_B_LO_RE": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "COEFF_B_LO_IM": [ { "value": "32440", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "COEFF_B_HI_RE": [ { "value": "-5632", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "COEFF_B_HI_IM": [ { "value": "31947", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_LO_RE": [ { "value": "-2037", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_LO_IM": [ { "value": "32376", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_HI_RE": [ { "value": "-7847", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "COEFF_B_HI_IM": [ { "value": "31476", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "N": [ { "value": "100", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
@@ -41,7 +41,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "16" } ],
+        "IPREVISION": [ { "value": "20" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_fsk_demod_0_4" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

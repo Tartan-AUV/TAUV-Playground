@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:axi_fsk_demod:1.0
-// IP Revision: 14
+// IP Revision: 20
 
 `timescale 1ns/1ps
 

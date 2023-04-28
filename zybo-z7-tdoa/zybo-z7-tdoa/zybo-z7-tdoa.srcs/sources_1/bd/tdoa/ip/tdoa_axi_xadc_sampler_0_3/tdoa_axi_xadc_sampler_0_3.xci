@@ -4,7 +4,7 @@
     "xci_name": "tdoa_axi_xadc_sampler_0_3",
     "cell_name": "axi_xadc_sampler_0",
     "component_reference": "user.org:user:axi_xadc_sampler:1.0",
-    "ip_revision": "20",
+    "ip_revision": "21",
     "gen_directory": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3",
     "parameters": {
       "component_parameters": {
@@ -27,7 +27,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "20" } ],
+        "IPREVISION": [ { "value": "21" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

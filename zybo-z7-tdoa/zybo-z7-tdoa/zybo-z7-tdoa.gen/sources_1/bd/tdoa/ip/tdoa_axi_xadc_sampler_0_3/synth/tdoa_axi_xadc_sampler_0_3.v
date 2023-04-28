@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:axi_xadc_sampler:1.0
-// IP Revision: 20
+// IP Revision: 21
 
 (* X_CORE_INFO = "axi_xadc_sampler_v1_0,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "tdoa_axi_xadc_sampler_0_3,axi_xadc_sampler_v1_0,{}" *)

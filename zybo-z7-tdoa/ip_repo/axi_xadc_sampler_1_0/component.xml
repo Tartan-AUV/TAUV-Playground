@@ -97,7 +97,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e30ef0e2</spirit:value>
+            <spirit:value>2f428d86</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -116,7 +116,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>e30ef0e2</spirit:value>
+            <spirit:value>2f428d86</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -281,7 +281,7 @@
       <spirit:file>
         <spirit:name>hdl/axi_xadc_sampler_v1_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_d311129f</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_e61f73c1</spirit:userFileType>
         <spirit:logicalName>work</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
@@ -393,13 +393,13 @@
         <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
       </xilinx:taxonomies>
       <xilinx:displayName>axi_xadc_sampler_v1.0</xilinx:displayName>
-      <xilinx:coreRevision>20</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2023-04-27T04:00:51Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>21</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2023-04-28T06:02:53Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="d81f247c"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="b0d4f0cf"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="cf415ca4"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="a8f59e61"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="e2de5fa4"/>
     </xilinx:packagingInfo>

@@ -27,6 +27,8 @@
     <Object name="system_ila_0/inst/net_slot_0_axis_tdata[47:0]" gui_info="Trigger Setup=0"/>
     <Object name="system_ila_0/inst/net_slot_0_axis_tvalid" gui_info=""/>
     <Object name="system_ila_0/inst/net_slot_4_axis_tvalid" gui_info=""/>
+    <Object name="system_ila_0/inst/net_slot_5_axis_tdata[39:0]" gui_info=""/>
+    <Object name="system_ila_0/inst/net_slot_5_axis_tready" gui_info="Capture Setup=0"/>
     <Object name="system_ila_0/inst/net_slot_5_axis_tvalid" gui_info=""/>
   </ObjectList>
   <ObjectList object_type="hw_sysmon" gui_info="">
@@ -916,7 +918,7 @@
     </probe>
     <probe type="ila" busType="net" source="netlist" spec="ILA_V2_RT">
       <probeOptions Id="DebugProbeParams">
-        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bX"/>
+        <Option Id="CAPTURE_COMPARE_VALUE" value="eq1&apos;bR"/>
         <Option Id="COMPARE_VALUE.0" value="eq1&apos;bX"/>
         <Option Id="DISPLAY_AS_ENUM" value="1"/>
         <Option Id="DISPLAY_HINT" value=""/>

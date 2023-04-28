@@ -29,12 +29,6 @@
   "../../../bd/tdoa/ip/tdoa_processing_system7_0_2/sim/tdoa_processing_system7_0_2.v" \
   "../../../bd/tdoa/ipshared/aa00/axi_channel_demux.srcs/sources_1/new/axi_channel_demux.v" \
   "../../../bd/tdoa/ip/tdoa_axi_channel_demux_0_1/sim/tdoa_axi_channel_demux_0_1.v" \
-  "../../../bd/tdoa/ipshared/f378/axi_fsk_demod.srcs/sources_1/new/cmult.v" \
-  "../../../bd/tdoa/ipshared/f378/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v" \
-  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_4/sim/tdoa_axi_fsk_demod_0_4.v" \
-  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_5/sim/tdoa_axi_fsk_demod_0_5.v" \
-  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_6/sim/tdoa_axi_fsk_demod_0_6.v" \
-  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_7/sim/tdoa_axi_fsk_demod_0_7.v" \
   "../../../bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/sim/bd_64f5.v" \
   "../../../bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_0/sim/bd_64f5_ila_lib_0.v" \
 -endlib
@@ -45,9 +39,6 @@
   "../../../bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_1/bd_64f5_g_inst_0_gigantic_mux.v" \
   "../../../bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_1/sim/bd_64f5_g_inst_0.v" \
   "../../../bd/tdoa/ip/tdoa_system_ila_0_0/sim/tdoa_system_ila_0_0.v" \
-  "../../../bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/src/xadc_wiz_0_3/xadc_wiz_0.v" \
-  "../../../bd/tdoa/ipshared/3d7b/hdl/axi_xadc_sampler_v1_0.v" \
-  "../../../bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/sim/tdoa_axi_xadc_sampler_0_3.v" \
 -endlib
 -makelib xcelium_lib/util_vector_logic_v2_0_2 \
   "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v" \
@@ -65,8 +56,17 @@
   "../../../bd/tdoa/ip/tdoa_proc_sys_reset_0_0/sim/tdoa_proc_sys_reset_0_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/src/xadc_wiz_0_3/xadc_wiz_0.v" \
+  "../../../bd/tdoa/ipshared/a97c/hdl/axi_xadc_sampler_v1_0.v" \
+  "../../../bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/sim/tdoa_axi_xadc_sampler_0_3.v" \
   "../../../bd/tdoa/ipshared/7335/led_debug.v" \
   "../../../bd/tdoa/ip/tdoa_led_debug_0_0/sim/tdoa_led_debug_0_0.v" \
+  "../../../bd/tdoa/ipshared/f5a9/axi_fsk_demod.srcs/sources_1/new/cmult.v" \
+  "../../../bd/tdoa/ipshared/f5a9/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v" \
+  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_4/sim/tdoa_axi_fsk_demod_0_4.v" \
+  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_5/sim/tdoa_axi_fsk_demod_0_5.v" \
+  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_6/sim/tdoa_axi_fsk_demod_0_6.v" \
+  "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_7/sim/tdoa_axi_fsk_demod_0_7.v" \
   "../../../bd/tdoa/sim/tdoa.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

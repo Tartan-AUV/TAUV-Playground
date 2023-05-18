@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:axi_fsk_demod:1.0
-// IP Revision: 20
+// IP Revision: 25
 
 `timescale 1ns/1ps
 
@@ -61,6 +61,7 @@ module tdoa_axi_fsk_demod_0_5 (
   o_axis_in_tready,
   i_axis_in_tdata,
   o_axis_out_tvalid,
+  o_axis_out_tlast,
   i_axis_out_tready,
   o_axis_out_tdata
 );
@@ -80,18 +81,20 @@ output wire o_axis_in_tready;
 input wire [39 : 0] i_axis_in_tdata;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis_out TVALID" *)
 output wire o_axis_out_tvalid;
+(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis_out TLAST" *)
+output wire o_axis_out_tlast;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis_out TREADY" *)
 input wire i_axis_out_tready;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_out, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN tdoa_processing_system7_0_2_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME axis_out, TDATA_NUM_BYTES 8, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 100000000, PHASE 0.0, CLK_DOMAIN tdoa_processing_system7_0_2_FCLK_CLK0, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis_out TDATA" *)
 output wire [63 : 0] o_axis_out_tdata;
 
   axi_fsk_demod #(
     .COEFF_A(11994),
-    .COEFF_B_LO_RE(1),
-    .COEFF_B_LO_IM(32440),
-    .COEFF_B_HI_RE(-5632),
-    .COEFF_B_HI_IM(31947),
+    .COEFF_B_LO_RE(-2037),
+    .COEFF_B_LO_IM(32376),
+    .COEFF_B_HI_RE(-7847),
+    .COEFF_B_HI_IM(31476),
     .N(100)
   ) inst (
     .i_axis_clk(i_axis_clk),
@@ -100,6 +103,7 @@ output wire [63 : 0] o_axis_out_tdata;
     .o_axis_in_tready(o_axis_in_tready),
     .i_axis_in_tdata(i_axis_in_tdata),
     .o_axis_out_tvalid(o_axis_out_tvalid),
+    .o_axis_out_tlast(o_axis_out_tlast),
     .i_axis_out_tready(i_axis_out_tready),
     .o_axis_out_tdata(o_axis_out_tdata)
   );

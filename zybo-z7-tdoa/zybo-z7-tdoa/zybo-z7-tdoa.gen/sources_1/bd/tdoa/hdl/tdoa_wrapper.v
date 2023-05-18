@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Fri Apr 28 02:32:31 2023
+//Date        : Wed May 17 23:56:03 2023
 //Host        : theo-ubuntu running 64-bit Ubuntu 22.04.1 LTS
 //Command     : generate_target tdoa_wrapper.bd
 //Design      : tdoa_wrapper
@@ -32,6 +32,7 @@ module tdoa_wrapper
     FIXED_IO_ps_porb,
     FIXED_IO_ps_srstb,
     ja,
+    jb,
     leds);
   inout [14:0]DDR_addr;
   inout [2:0]DDR_ba;
@@ -55,6 +56,7 @@ module tdoa_wrapper
   inout FIXED_IO_ps_porb;
   inout FIXED_IO_ps_srstb;
   input [7:0]ja;
+  output [6:0]jb;
   output [3:0]leds;
 
   wire [14:0]DDR_addr;
@@ -79,6 +81,7 @@ module tdoa_wrapper
   wire FIXED_IO_ps_porb;
   wire FIXED_IO_ps_srstb;
   wire [7:0]ja;
+  wire [6:0]jb;
   wire [3:0]leds;
 
   tdoa tdoa_i
@@ -104,5 +107,6 @@ module tdoa_wrapper
         .FIXED_IO_ps_porb(FIXED_IO_ps_porb),
         .FIXED_IO_ps_srstb(FIXED_IO_ps_srstb),
         .ja(ja),
+        .jb(jb),
         .leds(leds));
 endmodule

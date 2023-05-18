@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x9F68C065D9979A36",
+      "boundary_crc": "0x9F68C0651467F309",
       "design_src": "SBD",
       "device": "xc7z020clg400-1",
       "name": "bd_64f5",
@@ -93,7 +93,7 @@
             "value_src": "default"
           },
           "HAS_TLAST": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "HAS_TREADY": {
@@ -152,7 +152,7 @@
             "value_src": "default"
           },
           "HAS_TLAST": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "HAS_TREADY": {
@@ -211,7 +211,7 @@
             "value_src": "default"
           },
           "HAS_TLAST": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "HAS_TREADY": {

@@ -12,18 +12,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_proces
 # IP: bd/tdoa/ip/tdoa_axi_channel_demux_0_1/tdoa_axi_channel_demux_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_channel_demux_0_1 || ORIG_REF_NAME==tdoa_axi_channel_demux_0_1} -quiet] -quiet
 
-# IP: bd/tdoa/ip/tdoa_system_ila_0_0/tdoa_system_ila_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_system_ila_0_0 || ORIG_REF_NAME==tdoa_system_ila_0_0} -quiet] -quiet
-
-# Block Designs: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/bd_64f5.bd
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_64f5 || ORIG_REF_NAME==bd_64f5} -quiet] -quiet
-
-# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_0/bd_64f5_ila_lib_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_64f5_ila_lib_0 || ORIG_REF_NAME==bd_64f5_ila_lib_0} -quiet] -quiet
-
-# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_1/bd_64f5_g_inst_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_64f5_g_inst_0 || ORIG_REF_NAME==bd_64f5_g_inst_0} -quiet] -quiet
-
 # IP: bd/tdoa/ip/tdoa_util_vector_logic_0_0/tdoa_util_vector_logic_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_util_vector_logic_0_0 || ORIG_REF_NAME==tdoa_util_vector_logic_0_0} -quiet] -quiet
 
@@ -35,6 +23,18 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_xa
 
 # IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/src/xadc_wiz_0_3/xadc_wiz_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==xadc_wiz_0 || ORIG_REF_NAME==xadc_wiz_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axis_broadcaster_0_0/tdoa_axis_broadcaster_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axis_broadcaster_0_0 || ORIG_REF_NAME==tdoa_axis_broadcaster_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axi_fifo_mm_s_0_0/tdoa_axi_fifo_mm_s_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fifo_mm_s_0_0 || ORIG_REF_NAME==tdoa_axi_fifo_mm_s_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_xbar_1/tdoa_xbar_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_xbar_1 || ORIG_REF_NAME==tdoa_xbar_1} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_ps7_0_axi_periph_0/tdoa_ps7_0_axi_periph_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_ps7_0_axi_periph_0 || ORIG_REF_NAME==tdoa_ps7_0_axi_periph_0} -quiet] -quiet
 
 # IP: bd/tdoa/ip/tdoa_led_debug_0_0/tdoa_led_debug_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_led_debug_0_0 || ORIG_REF_NAME==tdoa_led_debug_0_0} -quiet] -quiet
@@ -51,20 +51,71 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fs
 # IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_7/tdoa_axi_fsk_demod_0_7.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_7 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_7} -quiet] -quiet
 
+# IP: bd/tdoa/ip/tdoa_edge_detector_0_0/tdoa_edge_detector_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_edge_detector_0_0 || ORIG_REF_NAME==tdoa_edge_detector_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axis_broadcaster_0_1/tdoa_axis_broadcaster_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axis_broadcaster_0_1 || ORIG_REF_NAME==tdoa_axis_broadcaster_0_1} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axis_broadcaster_0_2/tdoa_axis_broadcaster_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axis_broadcaster_0_2 || ORIG_REF_NAME==tdoa_axis_broadcaster_0_2} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axis_broadcaster_0_3/tdoa_axis_broadcaster_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axis_broadcaster_0_3 || ORIG_REF_NAME==tdoa_axis_broadcaster_0_3} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_system_ila_0_1/tdoa_system_ila_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_system_ila_0_1 || ORIG_REF_NAME==tdoa_system_ila_0_1} -quiet] -quiet
+
+# Block Designs: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/bd_a434.bd
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434 || ORIG_REF_NAME==bd_a434} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_0/bd_a434_ila_lib_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_ila_lib_0 || ORIG_REF_NAME==bd_a434_ila_lib_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_1/bd_a434_g_inst_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_g_inst_0 || ORIG_REF_NAME==bd_a434_g_inst_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_2/bd_a434_slot_6_aw_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_6_aw_0 || ORIG_REF_NAME==bd_a434_slot_6_aw_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_3/bd_a434_slot_6_w_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_6_w_0 || ORIG_REF_NAME==bd_a434_slot_6_w_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_4/bd_a434_slot_6_b_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_6_b_0 || ORIG_REF_NAME==bd_a434_slot_6_b_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_5/bd_a434_slot_6_ar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_6_ar_0 || ORIG_REF_NAME==bd_a434_slot_6_ar_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_6/bd_a434_slot_6_r_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_6_r_0 || ORIG_REF_NAME==bd_a434_slot_6_r_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_7/bd_a434_slot_7_aw_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_7_aw_0 || ORIG_REF_NAME==bd_a434_slot_7_aw_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_8/bd_a434_slot_7_w_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_7_w_0 || ORIG_REF_NAME==bd_a434_slot_7_w_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_9/bd_a434_slot_7_b_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_7_b_0 || ORIG_REF_NAME==bd_a434_slot_7_b_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_10/bd_a434_slot_7_ar_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_7_ar_0 || ORIG_REF_NAME==bd_a434_slot_7_ar_0} -quiet] -quiet
+
+# IP: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_11/bd_a434_slot_7_r_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slot_7_r_0 || ORIG_REF_NAME==bd_a434_slot_7_r_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_xlconstant_0_0/tdoa_xlconstant_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_xlconstant_0_0 || ORIG_REF_NAME==tdoa_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_auto_pc_1/tdoa_auto_pc_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_auto_pc_1 || ORIG_REF_NAME==tdoa_auto_pc_1} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_auto_pc_0/tdoa_auto_pc_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_auto_pc_0 || ORIG_REF_NAME==tdoa_auto_pc_0} -quiet] -quiet
+
 # XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_processing_system7_0_2/tdoa_processing_system7_0_2.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==tdoa_processing_system7_0_2 || ORIG_REF_NAME==tdoa_processing_system7_0_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_64f5_ila_lib_0 || ORIG_REF_NAME==bd_64f5_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
-#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_64f5_ila_lib_0 || ORIG_REF_NAME==bd_64f5_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/ip/ip_0/bd_64f5_ila_lib_0_ooc.xdc
-
-# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/bd_0/bd_64f5_ooc.xdc
-
-# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_0/tdoa_system_ila_0_0_ooc.xdc
 
 # XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_proc_sys_reset_0_0/tdoa_proc_sys_reset_0_0_board.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==tdoa_proc_sys_reset_0_0 || ORIG_REF_NAME==tdoa_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
@@ -76,5 +127,29 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 
 # XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/src/xadc_wiz_0_3/xadc_wiz_0.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==xadc_wiz_0 || ORIG_REF_NAME==xadc_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axis_broadcaster_0_0/tdoa_axis_broadcaster_0_0_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axis_broadcaster_0_1/tdoa_axis_broadcaster_0_1_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axis_broadcaster_0_2/tdoa_axis_broadcaster_0_2_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_axis_broadcaster_0_3/tdoa_axis_broadcaster_0_3_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila_impl.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_a434_ila_lib_0 || ORIG_REF_NAME==bd_a434_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_0/ila_v6_2/constraints/ila.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==bd_a434_ila_lib_0 || ORIG_REF_NAME==bd_a434_ila_lib_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/ip/ip_0/bd_a434_ila_lib_0_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/bd_0/bd_a434_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_system_ila_0_1/tdoa_system_ila_0_1_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_auto_pc_1/tdoa_auto_pc_1_ooc.xdc
+
+# XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_auto_pc_0/tdoa_auto_pc_0_ooc.xdc
 
 # XDC: /media/psf/TAUV-Playground/zybo-z7-tdoa/zybo-z7-tdoa/zybo-z7-tdoa.gen/sources_1/bd/tdoa/tdoa_ooc.xdc

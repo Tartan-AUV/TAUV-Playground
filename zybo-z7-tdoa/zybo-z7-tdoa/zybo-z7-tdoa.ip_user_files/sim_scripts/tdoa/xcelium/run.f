@@ -11,6 +11,7 @@
 -endlib
 -makelib xcelium_lib/xpm -sv \
   "/home/theo/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
+  "/home/theo/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
   "/home/theo/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
 -endlib
 -makelib xcelium_lib/xpm \
@@ -59,14 +60,87 @@
   "../../../bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/src/xadc_wiz_0_3/xadc_wiz_0.v" \
   "../../../bd/tdoa/ipshared/a97c/hdl/axi_xadc_sampler_v1_0.v" \
   "../../../bd/tdoa/ip/tdoa_axi_xadc_sampler_0_3/sim/tdoa_axi_xadc_sampler_0_3.v" \
+-endlib
+-makelib xcelium_lib/axis_infrastructure_v1_1_0 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_axis_broadcaster_0_0/hdl/tdata_tdoa_axis_broadcaster_0_0.v" \
+  "../../../bd/tdoa/ip/tdoa_axis_broadcaster_0_0/hdl/tuser_tdoa_axis_broadcaster_0_0.v" \
+-endlib
+-makelib xcelium_lib/axis_broadcaster_v1_1_26 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/81d6/hdl/axis_broadcaster_v1_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_axis_broadcaster_0_0/hdl/top_tdoa_axis_broadcaster_0_0.v" \
+  "../../../bd/tdoa/ip/tdoa_axis_broadcaster_0_0/sim/tdoa_axis_broadcaster_0_0.v" \
+-endlib
+-makelib xcelium_lib/axi_lite_ipif_v3_0_4 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/lib_pkg_v1_0_2 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/0513/hdl/lib_pkg_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/fifo_generator_v13_2_7 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/83df/simulation/fifo_generator_vlog_beh.v" \
+-endlib
+-makelib xcelium_lib/fifo_generator_v13_2_7 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/83df/hdl/fifo_generator_v13_2_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/fifo_generator_v13_2_7 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/83df/hdl/fifo_generator_v13_2_rfs.v" \
+-endlib
+-makelib xcelium_lib/lib_fifo_v1_0_16 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/axi_fifo_mm_s_v4_2_9 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/4fc8/hdl/axi_fifo_mm_s_v4_2_rfs.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_axi_fifo_mm_s_0_0/sim/tdoa_axi_fifo_mm_s_0_0.vhd" \
+-endlib
+-makelib xcelium_lib/generic_baseblocks_v2_1_0 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_register_slice_v2_1_27 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/f0b4/hdl/axi_register_slice_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_data_fifo_v2_1_26 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/3111/hdl/axi_data_fifo_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_crossbar_v2_1_28 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/c40e/hdl/axi_crossbar_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_xbar_1/sim/tdoa_xbar_1.v" \
   "../../../bd/tdoa/ipshared/7335/led_debug.v" \
   "../../../bd/tdoa/ip/tdoa_led_debug_0_0/sim/tdoa_led_debug_0_0.v" \
-  "../../../bd/tdoa/ipshared/f5a9/axi_fsk_demod.srcs/sources_1/new/cmult.v" \
-  "../../../bd/tdoa/ipshared/f5a9/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v" \
+  "../../../bd/tdoa/ipshared/e0dc/axi_fsk_demod.srcs/sources_1/new/cmult.v" \
+  "../../../bd/tdoa/ipshared/e0dc/axi_fsk_demod.srcs/sources_1/new/axi_fsk_demod.v" \
   "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_4/sim/tdoa_axi_fsk_demod_0_4.v" \
   "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_5/sim/tdoa_axi_fsk_demod_0_5.v" \
   "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_6/sim/tdoa_axi_fsk_demod_0_6.v" \
   "../../../bd/tdoa/ip/tdoa_axi_fsk_demod_0_7/sim/tdoa_axi_fsk_demod_0_7.v" \
+-endlib
+-makelib xcelium_lib/axi_protocol_converter_v2_1_27 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/aeb3/hdl/axi_protocol_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_auto_pc_1/sim/tdoa_auto_pc_1.v" \
+-endlib
+-makelib xcelium_lib/axi_clock_converter_v2_1_26 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/b8be/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/blk_mem_gen_v8_4_5 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/25a8/simulation/blk_mem_gen_v8_4.v" \
+-endlib
+-makelib xcelium_lib/axi_dwidth_converter_v2_1_27 \
+  "../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/tdoa/ip/tdoa_auto_us_0/sim/tdoa_auto_us_0.v" \
+  "../../../bd/tdoa/ip/tdoa_auto_ds_0/sim/tdoa_auto_ds_0.v" \
+  "../../../bd/tdoa/ip/tdoa_auto_pc_0/sim/tdoa_auto_pc_0.v" \
   "../../../bd/tdoa/sim/tdoa.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \

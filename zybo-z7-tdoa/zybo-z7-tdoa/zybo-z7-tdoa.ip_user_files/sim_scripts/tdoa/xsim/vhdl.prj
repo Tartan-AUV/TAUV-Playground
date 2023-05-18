@@ -1,4 +1,5 @@
 vhdl xil_defaultlib  \
 "../../../bd/tdoa/ip/tdoa_proc_sys_reset_0_0/sim/tdoa_proc_sys_reset_0_0.vhd" \
+"../../../bd/tdoa/ip/tdoa_axi_fifo_mm_s_0_0/sim/tdoa_axi_fifo_mm_s_0_0.vhd" \
 
 nosort

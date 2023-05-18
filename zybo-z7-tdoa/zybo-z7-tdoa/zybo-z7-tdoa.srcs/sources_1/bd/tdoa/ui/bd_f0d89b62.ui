@@ -1,50 +1,72 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.73495",
-   "Default View_TopLeft":"939,291",
+   "Default View_ScaleFactor":"0.448586",
+   "Default View_TopLeft":"2109,189",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 1 -x 320 -y 760 -defaultsOSRD -bot
-preplace port FIXED_IO -pg 1 -lvl 1 -x 340 -y 760 -defaultsOSRD -bot
-preplace portBus ja -pg 1 -lvl 4 -x 1100 -y 760 -defaultsOSRD -bot
-preplace portBus leds -pg 1 -lvl 8 -x 2330 -y 220 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 1 -x 170 -y 520 -defaultsOSRD
-preplace inst axi_channel_demux_0 -pg 1 -lvl 5 -x 1490 -y 580 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 7 -x 2190 -y 450 -defaultsOSRD
-preplace inst util_vector_logic_0 -pg 1 -lvl 3 -x 900 -y 550 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 2 -x 570 -y 590 -defaultsOSRD
-preplace inst led_debug_0 -pg 1 -lvl 7 -x 2190 -y 220 -defaultsOSRD
-preplace inst axi_fsk_demod_0 -pg 1 -lvl 6 -x 1850 -y 80 -defaultsOSRD
-preplace inst axi_fsk_demod_1 -pg 1 -lvl 6 -x 1850 -y 230 -defaultsOSRD
-preplace inst axi_fsk_demod_2 -pg 1 -lvl 6 -x 1850 -y 410 -defaultsOSRD
-preplace inst axi_fsk_demod_3 -pg 1 -lvl 6 -x 1850 -y 650 -defaultsOSRD
-preplace inst axi_xadc_sampler_0 -pg 1 -lvl 4 -x 1190 -y 580 -defaultsOSRD
-preplace netloc ja_0_1 1 3 1 1050 600n
-preplace netloc led_debug_0_o_leds 1 7 1 N 220
-preplace netloc proc_sys_reset_0_peripheral_aresetn 1 3 4 1060 500 1310 470 1650 310 2020
-preplace netloc proc_sys_reset_0_peripheral_aresetn1 1 2 5 750 460 NJ 460 NJ 460 1630J 530 NJ
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 -30 630 390 490 NJ 490 1050 490 1320 480 1640 510 2000
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 N 570
-preplace netloc axi_channel_demux_0_axis_out0 1 5 2 1610 500 2010J
-preplace netloc axi_channel_demux_0_axis_out1 1 5 1 1620 210n
-preplace netloc axi_channel_demux_0_axis_out2 1 5 1 1660 390n
-preplace netloc axi_channel_demux_0_axis_out3 1 5 1 1610 610n
-preplace netloc axi_fsk_demod_0_axis_out 1 6 1 2010 80n
-preplace netloc axi_fsk_demod_1_axis_out 1 6 1 1970 190n
-preplace netloc axi_fsk_demod_2_axis_out 1 6 1 1960 210n
-preplace netloc axi_fsk_demod_3_axis_out 1 6 1 1980 230n
-preplace netloc axi_xadc_sampler_0_o_axis_out 1 4 3 1330 490 NJ 490 1990
-preplace netloc processing_system7_0_DDR 1 1 1 380 470n
-preplace netloc processing_system7_0_FIXED_IO 1 1 1 370 490n
-levelinfo -pg 1 -50 170 570 900 1190 1490 1850 2190 2330
-pagesize -pg 1 -db -bbox -sgen -50 0 2450 870
+preplace port DDR -pg 1 -lvl 6 -x 2080 -y 1140 -defaultsOSRD -bot
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2100 -y 1140 -defaultsOSRD -bot
+preplace portBus ja -pg 1 -lvl 3 -x 730 -y 1140 -defaultsOSRD -bot
+preplace portBus leds -pg 1 -lvl 10 -x 3220 -y 220 -defaultsOSRD
+preplace portBus jb -pg 1 -lvl 10 -x 3220 -y 940 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -x 1930 -y 810 -defaultsOSRD
+preplace inst axi_channel_demux_0 -pg 1 -lvl 4 -x 1170 -y 580 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x 540 -y 900 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 1 -x 190 -y 800 -defaultsOSRD
+preplace inst axi_xadc_sampler_0 -pg 1 -lvl 3 -x 820 -y 920 -defaultsOSRD
+preplace inst axis_broadcaster_0 -pg 1 -lvl 6 -x 1930 -y 360 -defaultsOSRD
+preplace inst axi_fifo_mm_s_0 -pg 1 -lvl 8 -x 2820 -y 940 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 7 -x 2350 -y 780 -defaultsOSRD
+preplace inst led_debug_0 -pg 1 -lvl 7 -x 2350 -y 220 -defaultsOSRD
+preplace inst axi_fsk_demod_0 -pg 1 -lvl 5 -x 1520 -y 90 -defaultsOSRD
+preplace inst axi_fsk_demod_1 -pg 1 -lvl 5 -x 1520 -y 230 -defaultsOSRD
+preplace inst axi_fsk_demod_2 -pg 1 -lvl 5 -x 1520 -y 380 -defaultsOSRD -resize 195 122
+preplace inst axi_fsk_demod_3 -pg 1 -lvl 5 -x 1520 -y 520 -defaultsOSRD
+preplace inst axis_broadcaster_1 -pg 1 -lvl 6 -x 1930 -y 80 -defaultsOSRD
+preplace inst axis_broadcaster_2 -pg 1 -lvl 6 -x 1930 -y 220 -defaultsOSRD
+preplace inst axis_broadcaster_3 -pg 1 -lvl 6 -x 1930 -y 520 -defaultsOSRD
+preplace inst edge_detector_0 -pg 1 -lvl 7 -x 2350 -y 420 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 8 -x 2820 -y 670 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 9 -x 3120 -y 1050 -defaultsOSRD
+preplace netloc ja_0_1 1 2 1 700 940n
+preplace netloc led_debug_0_o_leds 1 7 3 NJ 220 NJ 220 N
+preplace netloc proc_sys_reset_0_peripheral_aresetn1 1 1 7 370 720 NJ 720 NJ 720 1370J 700 1690 640 2170 640 2500
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 8 10 900 380J 840 700 840 940 460 1370 10 1670 440 2180 630 2510
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 0 700 NJ 700 NJ 700 950J 710 NJ 710 1700J 700 2150
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 5 690 600 950 450 1350 -10 NJ -10 2160
+preplace netloc xlconstant_0_dout 1 9 1 3200 940n
+preplace netloc axi_channel_demux_0_axis_out0 1 4 1 1330 70n
+preplace netloc axi_channel_demux_0_axis_out1 1 4 1 1340 210n
+preplace netloc axi_channel_demux_0_axis_out2 1 4 1 1360 360n
+preplace netloc axi_channel_demux_0_axis_out3 1 4 1 1380 500n
+preplace netloc axi_fsk_demod_0_axis_out 1 5 3 1680 -40 NJ -40 2560
+preplace netloc axi_xadc_sampler_0_o_axis_out 1 3 5 960 700 1340J 690 1700J 620 NJ 620 2530
+preplace netloc axis_broadcaster_0_M00_AXIS 1 6 1 2130 170n
+preplace netloc processing_system7_0_DDR 1 6 1 2140 760n
+preplace netloc processing_system7_0_FIXED_IO 1 6 1 2130 780n
+preplace netloc processing_system7_0_M_AXI_GP0 1 6 1 2160 700n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 7 1 2550 700n
+preplace netloc ps7_0_axi_periph_M01_AXI 1 7 1 2530 720n
+preplace netloc axi_fsk_demod_1_axis_out 1 5 3 1660 0 NJ 0 2530
+preplace netloc axi_fsk_demod_2_axis_out 1 5 3 1650 -20 NJ -20 2540J
+preplace netloc axi_fsk_demod_3_axis_out 1 5 3 1640 -30 NJ -30 2550J
+preplace netloc axis_broadcaster_1_M00_AXIS 1 6 1 2180 70n
+preplace netloc axis_broadcaster_2_M00_AXIS 1 6 1 N 210
+preplace netloc axis_broadcaster_3_M00_AXIS 1 6 1 2150 230n
+preplace netloc axis_broadcaster_1_M01_AXIS 1 6 1 2170 90n
+preplace netloc axis_broadcaster_0_M01_AXIS 1 6 1 2130 370n
+preplace netloc axis_broadcaster_2_M01_AXIS 1 6 1 2140 230n
+preplace netloc axis_broadcaster_3_M01_AXIS 1 6 1 2170 430n
+preplace netloc edge_detector_0_axis_out 1 7 1 2520 420n
+levelinfo -pg 1 -20 190 540 820 1170 1520 1930 2350 2820 3120 3220
+pagesize -pg 1 -db -bbox -sgen -20 -100 3340 1250
 "
 }
 {
-   "da_axi4_cnt":"3",
+   "da_axi4_cnt":"6",
    "da_axi4_s2mm_cnt":"3",
    "da_board_cnt":"9",
-   "da_clkrst_cnt":"12",
+   "da_clkrst_cnt":"15",
    "da_ps7_cnt":"6"
 }

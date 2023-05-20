@@ -4,11 +4,15 @@
     "xci_name": "tdoa_edge_detector_0_0",
     "cell_name": "edge_detector_0",
     "component_reference": "user.org:user:edge_detector:1.0",
-    "ip_revision": "3",
+    "ip_revision": "9",
     "gen_directory": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_edge_detector_0_0",
     "parameters": {
       "component_parameters": {
-        "Component_Name": [ { "value": "tdoa_edge_detector_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "tdoa_edge_detector_0_0", "resolve_type": "user", "usage": "all" } ],
+        "THRESHOLD": [ { "value": "1000", "resolve_type": "user", "format": "long", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "THRESHOLD": [ { "value": "1000", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -27,7 +31,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "3" } ],
+        "IPREVISION": [ { "value": "9" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_edge_detector_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

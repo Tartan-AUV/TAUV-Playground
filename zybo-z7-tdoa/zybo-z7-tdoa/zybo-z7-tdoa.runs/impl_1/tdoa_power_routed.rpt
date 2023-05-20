@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-| Date             : Thu May 18 00:05:56 2023
+| Date             : Fri May 19 19:24:20 2023
 | Host             : theo-ubuntu running 64-bit Ubuntu 22.04.1 LTS
 | Command          : report_power -file tdoa_power_routed.rpt -pb tdoa_power_summary_routed.pb -rpx tdoa_power_routed.rpx
 | Design           : tdoa
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.861        |
+| Total On-Chip Power (W)  | 1.759        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.710        |
-| Device Static (W)        | 0.151        |
+| Dynamic (W)              | 1.611        |
+| Device Static (W)        | 0.148        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 63.5         |
-| Junction Temperature (C) | 46.5         |
+| Max Ambient (C)          | 64.7         |
+| Junction Temperature (C) | 45.3         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,23 +52,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.059 |        4 |       --- |             --- |
-| Slice Logic              |     0.036 |    33917 |       --- |             --- |
-|   LUT as Logic           |     0.029 |    10134 |     53200 |           19.05 |
-|   CARRY4                 |     0.005 |     1006 |     13300 |            7.56 |
-|   Register               |     0.002 |    16456 |    106400 |           15.47 |
-|   F7/F8 Muxes            |    <0.001 |     1461 |     53200 |            2.75 |
+| Clocks                   |     0.046 |        4 |       --- |             --- |
+| Slice Logic              |     0.016 |    27106 |       --- |             --- |
+|   LUT as Logic           |     0.014 |     6787 |     53200 |           12.76 |
+|   CARRY4                 |     0.001 |      610 |     13300 |            4.59 |
+|   Register               |    <0.001 |    12770 |    106400 |           12.00 |
 |   LUT as Shift Register  |    <0.001 |     1020 |     17400 |            5.86 |
-|   LUT as Distributed RAM |    <0.001 |       88 |     17400 |            0.51 |
-|   Others                 |     0.000 |     1313 |       --- |             --- |
-| Signals                  |     0.068 |    31005 |       --- |             --- |
-| Block RAM                |     0.014 |       20 |       140 |           14.29 |
-| DSPs                     |     0.131 |      164 |       220 |           74.55 |
+|   LUT as Distributed RAM |    <0.001 |     1080 |     17400 |            6.21 |
+|   F7/F8 Muxes            |    <0.001 |      500 |     53200 |            0.94 |
+|   Others                 |     0.000 |     1359 |       --- |             --- |
+| Signals                  |     0.029 |    20159 |       --- |             --- |
+| Block RAM                |     0.014 |       23 |       140 |           16.43 |
+| DSPs                     |     0.103 |       92 |       220 |           41.82 |
 | I/O                      |    <0.001 |       19 |       125 |           15.20 |
 | XADC                     |     0.002 |        1 |       --- |             --- |
 | PS7                      |     1.400 |        1 |       --- |             --- |
-| Static Power             |     0.151 |          |           |                 |
-| Total                    |     1.861 |          |           |                 |
+| Static Power             |     0.148 |          |           |                 |
+| Total                    |     1.759 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -78,8 +78,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.325 |       0.308 |      0.017 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.016 |       0.000 |      0.016 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.225 |       0.209 |      0.016 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.015 |       0.000 |      0.015 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -91,7 +91,7 @@ Table of Contents
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccpint   |       1.000 |     0.750 |       0.718 |      0.032 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.749 |       0.718 |      0.031 |       NA    | Unspecified | NA         |
 | Vccpaux   |       1.800 |     0.061 |       0.051 |      0.010 |       NA    | Unspecified | NA         |
 | Vccpll    |       1.800 |     0.017 |       0.014 |      0.003 |       NA    | Unspecified | NA         |
 | Vcco_ddr  |       1.350 |     0.413 |       0.411 |      0.002 |       NA    | Unspecified | NA         |
@@ -155,26 +155,42 @@ Table of Contents
 +--------------------------+-----------+
 | Name                     | Power (W) |
 +--------------------------+-----------+
-| tdoa                     |     1.710 |
-|   axi_fifo_mm_s_0        |     0.003 |
-|     U0                   |     0.003 |
-|       COMP_IPIC2AXI_S    |     0.002 |
-|   axi_fsk_demod_0        |     0.064 |
-|     inst                 |     0.064 |
-|       cmult_hi           |     0.016 |
-|       cmult_lo           |     0.019 |
-|   axi_fsk_demod_1        |     0.061 |
-|     inst                 |     0.061 |
-|       cmult_hi           |     0.016 |
-|       cmult_lo           |     0.017 |
-|   axi_fsk_demod_2        |     0.061 |
-|     inst                 |     0.061 |
-|       cmult_hi           |     0.017 |
-|       cmult_lo           |     0.016 |
-|   axi_fsk_demod_3        |     0.060 |
-|     inst                 |     0.060 |
-|       cmult_hi           |     0.016 |
-|       cmult_lo           |     0.016 |
+| tdoa                     |     1.611 |
+|   axi_fifo_mm_s_0        |     0.006 |
+|     U0                   |     0.006 |
+|       COMP_IPIC2AXI_S    |     0.006 |
+|   axi_fsk_demod_0        |     0.036 |
+|     inst                 |     0.036 |
+|       cmult_hi_0         |     0.004 |
+|       cmult_hi_1         |     0.004 |
+|       cmult_hi_2         |     0.004 |
+|       cmult_lo_0         |     0.005 |
+|       cmult_lo_1         |     0.004 |
+|       cmult_lo_2         |     0.004 |
+|   axi_fsk_demod_1        |     0.036 |
+|     inst                 |     0.036 |
+|       cmult_hi_0         |     0.004 |
+|       cmult_hi_1         |     0.005 |
+|       cmult_hi_2         |     0.004 |
+|       cmult_lo_0         |     0.004 |
+|       cmult_lo_1         |     0.004 |
+|       cmult_lo_2         |     0.004 |
+|   axi_fsk_demod_2        |     0.036 |
+|     inst                 |     0.036 |
+|       cmult_hi_0         |     0.005 |
+|       cmult_hi_1         |     0.004 |
+|       cmult_hi_2         |     0.005 |
+|       cmult_lo_0         |     0.004 |
+|       cmult_lo_1         |     0.004 |
+|       cmult_lo_2         |     0.004 |
+|   axi_fsk_demod_3        |     0.037 |
+|     inst                 |     0.037 |
+|       cmult_hi_0         |     0.005 |
+|       cmult_hi_1         |     0.004 |
+|       cmult_hi_2         |     0.005 |
+|       cmult_lo_0         |     0.005 |
+|       cmult_lo_1         |     0.004 |
+|       cmult_lo_2         |     0.005 |
 |   axi_xadc_sampler_0     |     0.002 |
 |     inst                 |     0.002 |
 |       xadc               |     0.002 |
@@ -188,9 +204,9 @@ Table of Contents
 |       auto_pc            |     0.004 |
 |     xbar                 |     0.004 |
 |       inst               |     0.004 |
-|   system_ila_0           |     0.046 |
-|     inst                 |     0.046 |
-|       ila_lib            |     0.046 |
+|   system_ila_0           |     0.044 |
+|     inst                 |     0.044 |
+|       ila_lib            |     0.044 |
 +--------------------------+-----------+
 
 

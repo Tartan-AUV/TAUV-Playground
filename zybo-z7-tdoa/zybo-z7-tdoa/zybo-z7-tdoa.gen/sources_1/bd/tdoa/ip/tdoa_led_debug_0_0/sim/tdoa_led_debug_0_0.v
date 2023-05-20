@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:led_debug:1.0
-// IP Revision: 4
+// IP Revision: 7
 
 `timescale 1ns/1ps
 
@@ -96,7 +96,9 @@ input wire i_axis_3_tvalid;
 input wire [63 : 0] i_axis_3_tdata;
 output wire [3 : 0] o_leds;
 
-  led_debug inst (
+  led_debug #(
+    .THRESHOLD(1000)
+  ) inst (
     .i_axis_clk(i_axis_clk),
     .i_axis_rst(i_axis_rst),
     .i_axis_0_tvalid(i_axis_0_tvalid),

@@ -66,12 +66,14 @@ initial begin
 end
 
 axi_fsk_demod #(
+/*
     .COEFF_A(11994),
     .COEFF_B_LO_RE(1),
     .COEFF_B_LO_IM(32440),
     .COEFF_B_HI_RE(-5632),
     .COEFF_B_HI_IM(31947),
     .N(100)
+*/
 ) axi_fsk_demod (
     .i_axis_clk(clk),
     .i_axis_rst(rst),
@@ -95,7 +97,7 @@ end
 reg bit = 0;
 
 always begin
-    #(10 * ONE_MS) bit <= ~bit;
+    #(2 * ONE_MS) bit <= ~bit;
 end
 
 always @(posedge clk) begin

@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Wed May 17 23:56:03 2023
+//Date        : Fri May 19 19:16:07 2023
 //Host        : theo-ubuntu running 64-bit Ubuntu 22.04.1 LTS
 //Command     : generate_target tdoa_wrapper.bd
 //Design      : tdoa_wrapper

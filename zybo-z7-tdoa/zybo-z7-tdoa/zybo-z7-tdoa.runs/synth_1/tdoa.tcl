@@ -70,9 +70,17 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param xicom.use_bs_reader 1
 set_msg_config -id {HDL-1065} -limit 10000
+set_msg_config  -id {[Timing 38-191]}  -suppress 
+set_msg_config  -id {[Common 17-14]}  -suppress 
+set_msg_config  -id {[Timing 38-91]}  -suppress 
+set_msg_config  -id {[Timing 38-35]}  -suppress 
+set_msg_config  -id {[Timing 38-78]}  -suppress 
+set_msg_config  -id {[Timing 38-314]}  -suppress 
+set_msg_config  -id {[Timing 38-102]}  -suppress 
+set_msg_config  -id {[Timing 38-164]}  -suppress 
+set_msg_config  -id {[Timing 38-127]}  -suppress 
+set_msg_config  -id {[Timing 38-3]}  -suppress 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 

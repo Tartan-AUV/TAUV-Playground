@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
-//Date        : Wed May 17 23:56:03 2023
+//Date        : Fri May 19 19:16:06 2023
 //Host        : theo-ubuntu running 64-bit Ubuntu 22.04.1 LTS
 //Command     : generate_target tdoa.bd
 //Design      : tdoa
@@ -326,6 +326,7 @@ module m01_couplers_imp_HQMWSM
     M_AXI_awaddr,
     M_AXI_awburst,
     M_AXI_awcache,
+    M_AXI_awid,
     M_AXI_awlen,
     M_AXI_awlock,
     M_AXI_awprot,
@@ -358,6 +359,7 @@ module m01_couplers_imp_HQMWSM
     S_AXI_awaddr,
     S_AXI_awburst,
     S_AXI_awcache,
+    S_AXI_awid,
     S_AXI_awlen,
     S_AXI_awlock,
     S_AXI_awprot,
@@ -390,6 +392,7 @@ module m01_couplers_imp_HQMWSM
   output [31:0]M_AXI_awaddr;
   output [1:0]M_AXI_awburst;
   output [3:0]M_AXI_awcache;
+  output [11:0]M_AXI_awid;
   output [7:0]M_AXI_awlen;
   output [0:0]M_AXI_awlock;
   output [2:0]M_AXI_awprot;
@@ -422,6 +425,7 @@ module m01_couplers_imp_HQMWSM
   input [31:0]S_AXI_awaddr;
   input [1:0]S_AXI_awburst;
   input [3:0]S_AXI_awcache;
+  input [11:0]S_AXI_awid;
   input [7:0]S_AXI_awlen;
   input [0:0]S_AXI_awlock;
   input [2:0]S_AXI_awprot;
@@ -453,6 +457,7 @@ module m01_couplers_imp_HQMWSM
   wire [31:0]m01_couplers_to_m01_couplers_AWADDR;
   wire [1:0]m01_couplers_to_m01_couplers_AWBURST;
   wire [3:0]m01_couplers_to_m01_couplers_AWCACHE;
+  wire [11:0]m01_couplers_to_m01_couplers_AWID;
   wire [7:0]m01_couplers_to_m01_couplers_AWLEN;
   wire [0:0]m01_couplers_to_m01_couplers_AWLOCK;
   wire [2:0]m01_couplers_to_m01_couplers_AWPROT;
@@ -483,6 +488,7 @@ module m01_couplers_imp_HQMWSM
   assign M_AXI_awaddr[31:0] = m01_couplers_to_m01_couplers_AWADDR;
   assign M_AXI_awburst[1:0] = m01_couplers_to_m01_couplers_AWBURST;
   assign M_AXI_awcache[3:0] = m01_couplers_to_m01_couplers_AWCACHE;
+  assign M_AXI_awid[11:0] = m01_couplers_to_m01_couplers_AWID;
   assign M_AXI_awlen[7:0] = m01_couplers_to_m01_couplers_AWLEN;
   assign M_AXI_awlock[0] = m01_couplers_to_m01_couplers_AWLOCK;
   assign M_AXI_awprot[2:0] = m01_couplers_to_m01_couplers_AWPROT;
@@ -514,6 +520,7 @@ module m01_couplers_imp_HQMWSM
   assign m01_couplers_to_m01_couplers_AWADDR = S_AXI_awaddr[31:0];
   assign m01_couplers_to_m01_couplers_AWBURST = S_AXI_awburst[1:0];
   assign m01_couplers_to_m01_couplers_AWCACHE = S_AXI_awcache[3:0];
+  assign m01_couplers_to_m01_couplers_AWID = S_AXI_awid[11:0];
   assign m01_couplers_to_m01_couplers_AWLEN = S_AXI_awlen[7:0];
   assign m01_couplers_to_m01_couplers_AWLOCK = S_AXI_awlock[0];
   assign m01_couplers_to_m01_couplers_AWPROT = S_AXI_awprot[2:0];
@@ -1129,6 +1136,7 @@ module tdoa
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWADDR" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [31:0]ps7_0_axi_periph_M01_AXI_AWADDR;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWBURST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [1:0]ps7_0_axi_periph_M01_AXI_AWBURST;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWCACHE" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [3:0]ps7_0_axi_periph_M01_AXI_AWCACHE;
+  (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [11:0]ps7_0_axi_periph_M01_AXI_AWID;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWLEN" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [7:0]ps7_0_axi_periph_M01_AXI_AWLEN;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWLOCK" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]ps7_0_axi_periph_M01_AXI_AWLOCK;
   (* CONN_BUS_INFO = "ps7_0_axi_periph_M01_AXI xilinx.com:interface:aximm:1.0 AXI4 AWPROT" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]ps7_0_axi_periph_M01_AXI_AWPROT;
@@ -1218,7 +1226,7 @@ module tdoa
         .o_axis_out_tdata(axi_fsk_demod_0_axis_out_TDATA),
         .o_axis_out_tlast(axi_fsk_demod_0_axis_out_TLAST),
         .o_axis_out_tvalid(axi_fsk_demod_0_axis_out_TVALID));
-  tdoa_axi_fsk_demod_0_5 axi_fsk_demod_1
+  tdoa_axi_fsk_demod_0_8 axi_fsk_demod_1
        (.i_axis_clk(processing_system7_0_FCLK_CLK0),
         .i_axis_in_tdata(axi_channel_demux_0_axis_out1_TDATA),
         .i_axis_in_tvalid(axi_channel_demux_0_axis_out1_TVALID),
@@ -1228,7 +1236,7 @@ module tdoa
         .o_axis_out_tdata(axi_fsk_demod_1_axis_out_TDATA),
         .o_axis_out_tlast(axi_fsk_demod_1_axis_out_TLAST),
         .o_axis_out_tvalid(axi_fsk_demod_1_axis_out_TVALID));
-  tdoa_axi_fsk_demod_0_6 axi_fsk_demod_2
+  tdoa_axi_fsk_demod_0_9 axi_fsk_demod_2
        (.i_axis_clk(processing_system7_0_FCLK_CLK0),
         .i_axis_in_tdata(axi_channel_demux_0_axis_out2_TDATA),
         .i_axis_in_tvalid(axi_channel_demux_0_axis_out2_TVALID),
@@ -1238,7 +1246,7 @@ module tdoa
         .o_axis_out_tdata(axi_fsk_demod_2_axis_out_TDATA),
         .o_axis_out_tlast(axi_fsk_demod_2_axis_out_TLAST),
         .o_axis_out_tvalid(axi_fsk_demod_2_axis_out_TVALID));
-  tdoa_axi_fsk_demod_0_7 axi_fsk_demod_3
+  tdoa_axi_fsk_demod_0_10 axi_fsk_demod_3
        (.i_axis_clk(processing_system7_0_FCLK_CLK0),
         .i_axis_in_tdata(axi_channel_demux_0_axis_out3_TDATA),
         .i_axis_in_tvalid(axi_channel_demux_0_axis_out3_TVALID),
@@ -1436,6 +1444,7 @@ module tdoa
         .M01_AXI_awaddr(ps7_0_axi_periph_M01_AXI_AWADDR),
         .M01_AXI_awburst(ps7_0_axi_periph_M01_AXI_AWBURST),
         .M01_AXI_awcache(ps7_0_axi_periph_M01_AXI_AWCACHE),
+        .M01_AXI_awid(ps7_0_axi_periph_M01_AXI_AWID),
         .M01_AXI_awlen(ps7_0_axi_periph_M01_AXI_AWLEN),
         .M01_AXI_awlock(ps7_0_axi_periph_M01_AXI_AWLOCK),
         .M01_AXI_awprot(ps7_0_axi_periph_M01_AXI_AWPROT),
@@ -1548,7 +1557,7 @@ module tdoa
         .SLOT_7_AXI_awaddr(ps7_0_axi_periph_M01_AXI_AWADDR),
         .SLOT_7_AXI_awburst(ps7_0_axi_periph_M01_AXI_AWBURST),
         .SLOT_7_AXI_awcache(ps7_0_axi_periph_M01_AXI_AWCACHE),
-        .SLOT_7_AXI_awid({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
+        .SLOT_7_AXI_awid(ps7_0_axi_periph_M01_AXI_AWID),
         .SLOT_7_AXI_awlen(ps7_0_axi_periph_M01_AXI_AWLEN),
         .SLOT_7_AXI_awlock(ps7_0_axi_periph_M01_AXI_AWLOCK),
         .SLOT_7_AXI_awprot(ps7_0_axi_periph_M01_AXI_AWPROT),
@@ -1617,6 +1626,7 @@ module tdoa_ps7_0_axi_periph_0
     M01_AXI_awaddr,
     M01_AXI_awburst,
     M01_AXI_awcache,
+    M01_AXI_awid,
     M01_AXI_awlen,
     M01_AXI_awlock,
     M01_AXI_awprot,
@@ -1710,6 +1720,7 @@ module tdoa_ps7_0_axi_periph_0
   output [31:0]M01_AXI_awaddr;
   output [1:0]M01_AXI_awburst;
   output [3:0]M01_AXI_awcache;
+  output [11:0]M01_AXI_awid;
   output [7:0]M01_AXI_awlen;
   output [0:0]M01_AXI_awlock;
   output [2:0]M01_AXI_awprot;
@@ -1798,6 +1809,7 @@ module tdoa_ps7_0_axi_periph_0
   wire [31:0]m01_couplers_to_ps7_0_axi_periph_AWADDR;
   wire [1:0]m01_couplers_to_ps7_0_axi_periph_AWBURST;
   wire [3:0]m01_couplers_to_ps7_0_axi_periph_AWCACHE;
+  wire [11:0]m01_couplers_to_ps7_0_axi_periph_AWID;
   wire [7:0]m01_couplers_to_ps7_0_axi_periph_AWLEN;
   wire [0:0]m01_couplers_to_ps7_0_axi_periph_AWLOCK;
   wire [2:0]m01_couplers_to_ps7_0_axi_periph_AWPROT;
@@ -1944,6 +1956,7 @@ module tdoa_ps7_0_axi_periph_0
   wire [63:32]xbar_to_m01_couplers_AWADDR;
   wire [3:2]xbar_to_m01_couplers_AWBURST;
   wire [7:4]xbar_to_m01_couplers_AWCACHE;
+  wire [23:12]xbar_to_m01_couplers_AWID;
   wire [15:8]xbar_to_m01_couplers_AWLEN;
   wire [1:1]xbar_to_m01_couplers_AWLOCK;
   wire [5:3]xbar_to_m01_couplers_AWPROT;
@@ -1983,6 +1996,7 @@ module tdoa_ps7_0_axi_periph_0
   assign M01_AXI_awaddr[31:0] = m01_couplers_to_ps7_0_axi_periph_AWADDR;
   assign M01_AXI_awburst[1:0] = m01_couplers_to_ps7_0_axi_periph_AWBURST;
   assign M01_AXI_awcache[3:0] = m01_couplers_to_ps7_0_axi_periph_AWCACHE;
+  assign M01_AXI_awid[11:0] = m01_couplers_to_ps7_0_axi_periph_AWID;
   assign M01_AXI_awlen[7:0] = m01_couplers_to_ps7_0_axi_periph_AWLEN;
   assign M01_AXI_awlock[0] = m01_couplers_to_ps7_0_axi_periph_AWLOCK;
   assign M01_AXI_awprot[2:0] = m01_couplers_to_ps7_0_axi_periph_AWPROT;
@@ -2126,6 +2140,7 @@ module tdoa_ps7_0_axi_periph_0
         .M_AXI_awaddr(m01_couplers_to_ps7_0_axi_periph_AWADDR),
         .M_AXI_awburst(m01_couplers_to_ps7_0_axi_periph_AWBURST),
         .M_AXI_awcache(m01_couplers_to_ps7_0_axi_periph_AWCACHE),
+        .M_AXI_awid(m01_couplers_to_ps7_0_axi_periph_AWID),
         .M_AXI_awlen(m01_couplers_to_ps7_0_axi_periph_AWLEN),
         .M_AXI_awlock(m01_couplers_to_ps7_0_axi_periph_AWLOCK),
         .M_AXI_awprot(m01_couplers_to_ps7_0_axi_periph_AWPROT),
@@ -2158,6 +2173,7 @@ module tdoa_ps7_0_axi_periph_0
         .S_AXI_awaddr(xbar_to_m01_couplers_AWADDR),
         .S_AXI_awburst(xbar_to_m01_couplers_AWBURST),
         .S_AXI_awcache(xbar_to_m01_couplers_AWCACHE),
+        .S_AXI_awid(xbar_to_m01_couplers_AWID),
         .S_AXI_awlen(xbar_to_m01_couplers_AWLEN),
         .S_AXI_awlock(xbar_to_m01_couplers_AWLOCK),
         .S_AXI_awprot(xbar_to_m01_couplers_AWPROT),
@@ -2272,7 +2288,7 @@ module tdoa_ps7_0_axi_periph_0
         .m_axi_awaddr({xbar_to_m01_couplers_AWADDR,xbar_to_m00_couplers_AWADDR}),
         .m_axi_awburst({xbar_to_m01_couplers_AWBURST,xbar_to_m00_couplers_AWBURST}),
         .m_axi_awcache({xbar_to_m01_couplers_AWCACHE,xbar_to_m00_couplers_AWCACHE}),
-        .m_axi_awid(xbar_to_m00_couplers_AWID),
+        .m_axi_awid({xbar_to_m01_couplers_AWID,xbar_to_m00_couplers_AWID}),
         .m_axi_awlen({xbar_to_m01_couplers_AWLEN,xbar_to_m00_couplers_AWLEN}),
         .m_axi_awlock({xbar_to_m01_couplers_AWLOCK,xbar_to_m00_couplers_AWLOCK}),
         .m_axi_awprot({xbar_to_m01_couplers_AWPROT,xbar_to_m00_couplers_AWPROT}),

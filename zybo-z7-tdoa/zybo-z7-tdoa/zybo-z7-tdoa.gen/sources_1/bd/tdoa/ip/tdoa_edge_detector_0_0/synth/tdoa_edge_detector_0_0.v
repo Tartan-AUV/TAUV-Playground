@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:edge_detector:1.0
-// IP Revision: 3
+// IP Revision: 9
 
 (* X_CORE_INFO = "edge_detector,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "tdoa_edge_detector_0_0,edge_detector,{}" *)
@@ -119,7 +119,9 @@ input wire i_axis_out_tready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 axis_out TDATA" *)
 output wire [31 : 0] o_axis_out_tdata;
 
-  edge_detector inst (
+  edge_detector #(
+    .THRESHOLD(1000)
+  ) inst (
     .i_axis_clk(i_axis_clk),
     .i_axis_rst(i_axis_rst),
     .i_axis_0_tvalid(i_axis_0_tvalid),

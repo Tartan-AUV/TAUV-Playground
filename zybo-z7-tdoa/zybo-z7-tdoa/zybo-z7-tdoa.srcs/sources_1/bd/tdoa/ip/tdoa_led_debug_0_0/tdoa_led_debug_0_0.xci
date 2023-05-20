@@ -4,11 +4,15 @@
     "xci_name": "tdoa_led_debug_0_0",
     "cell_name": "led_debug_0",
     "component_reference": "user.org:user:led_debug:1.0",
-    "ip_revision": "4",
+    "ip_revision": "7",
     "gen_directory": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_led_debug_0_0",
     "parameters": {
       "component_parameters": {
-        "Component_Name": [ { "value": "tdoa_led_debug_0_0", "resolve_type": "user", "usage": "all" } ]
+        "Component_Name": [ { "value": "tdoa_led_debug_0_0", "resolve_type": "user", "usage": "all" } ],
+        "THRESHOLD": [ { "value": "1000", "resolve_type": "user", "format": "long", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "THRESHOLD": [ { "value": "1000", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
@@ -27,7 +31,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "7" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../zybo-z7-tdoa.gen/sources_1/bd/tdoa/ip/tdoa_led_debug_0_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

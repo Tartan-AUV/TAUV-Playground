@@ -48,7 +48,7 @@
 
 
 // IP VLNV: user.org:user:axi_fsk_demod:1.0
-// IP Revision: 25
+// IP Revision: 27
 
 (* X_CORE_INFO = "axi_fsk_demod,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "tdoa_axi_fsk_demod_0_4,axi_fsk_demod,{}" *)
@@ -90,12 +90,21 @@ input wire i_axis_out_tready;
 output wire [63 : 0] o_axis_out_tdata;
 
   axi_fsk_demod #(
-    .COEFF_A(11994),
-    .COEFF_B_LO_RE(-2037),
-    .COEFF_B_LO_IM(32376),
-    .COEFF_B_HI_RE(-7847),
-    .COEFF_B_HI_IM(31476),
-    .N(100)
+    .COEFF_A(620),
+    .N(500),
+    .COEFF_B_LO_RE_0(-51),
+    .COEFF_B_LO_IM_0(1021),
+    .COEFF_B_LO_RE_1(-64),
+    .COEFF_B_LO_IM_1(1020),
+    .COEFF_B_LO_RE_2(-77),
+    .COEFF_B_LO_IM_2(1020),
+    .COEFF_B_HI_RE_0(-216),
+    .COEFF_B_HI_IM_0(999),
+    .COEFF_B_HI_RE_1(-229),
+    .COEFF_B_HI_IM_1(996),
+    .COEFF_B_HI_RE_2(-241),
+    .COEFF_B_HI_IM_2(993),
+    .DECIMAL_BITS(10)
   ) inst (
     .i_axis_clk(i_axis_clk),
     .i_axis_rst(i_axis_rst),

@@ -28,17 +28,17 @@
         },
         "m01_couplers": {}
       },
-      "led_debug_0": "",
+      "axis_broadcaster_1": "",
+      "axis_broadcaster_2": "",
+      "axis_broadcaster_3": "",
+      "system_ila_0": "",
+      "xlconstant_0": "",
       "axi_fsk_demod_0": "",
       "axi_fsk_demod_1": "",
       "axi_fsk_demod_2": "",
       "axi_fsk_demod_3": "",
-      "axis_broadcaster_1": "",
-      "axis_broadcaster_2": "",
-      "axis_broadcaster_3": "",
       "edge_detector_0": "",
-      "system_ila_0": "",
-      "xlconstant_0": ""
+      "led_debug_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1430,6 +1430,15 @@
           "C_HAS_AXIS_TDEST": {
             "value": "false"
           },
+          "C_RX_FIFO_DEPTH": {
+            "value": "4096"
+          },
+          "C_RX_FIFO_PE_THRESHOLD": {
+            "value": "5"
+          },
+          "C_RX_FIFO_PF_THRESHOLD": {
+            "value": "4091"
+          },
           "C_S_AXI4_DATA_WIDTH": {
             "value": "32"
           },
@@ -1886,116 +1895,6 @@
           }
         }
       },
-      "led_debug_0": {
-        "vlnv": "user.org:user:led_debug:1.0",
-        "xci_name": "tdoa_led_debug_0_0",
-        "xci_path": "ip/tdoa_led_debug_0_0/tdoa_led_debug_0_0.xci",
-        "inst_hier_path": "led_debug_0"
-      },
-      "axi_fsk_demod_0": {
-        "vlnv": "user.org:user:axi_fsk_demod:1.0",
-        "xci_name": "tdoa_axi_fsk_demod_0_4",
-        "xci_path": "ip/tdoa_axi_fsk_demod_0_4/tdoa_axi_fsk_demod_0_4.xci",
-        "inst_hier_path": "axi_fsk_demod_0",
-        "parameters": {
-          "COEFF_A": {
-            "value": "11994"
-          },
-          "COEFF_B_HI_IM": {
-            "value": "31476"
-          },
-          "COEFF_B_HI_RE": {
-            "value": "-7847"
-          },
-          "COEFF_B_LO_IM": {
-            "value": "32376"
-          },
-          "COEFF_B_LO_RE": {
-            "value": "-2037"
-          },
-          "N": {
-            "value": "100"
-          }
-        }
-      },
-      "axi_fsk_demod_1": {
-        "vlnv": "user.org:user:axi_fsk_demod:1.0",
-        "xci_name": "tdoa_axi_fsk_demod_0_5",
-        "xci_path": "ip/tdoa_axi_fsk_demod_0_5/tdoa_axi_fsk_demod_0_5.xci",
-        "inst_hier_path": "axi_fsk_demod_1",
-        "parameters": {
-          "COEFF_A": {
-            "value": "11994"
-          },
-          "COEFF_B_HI_IM": {
-            "value": "31476"
-          },
-          "COEFF_B_HI_RE": {
-            "value": "-7847"
-          },
-          "COEFF_B_LO_IM": {
-            "value": "32376"
-          },
-          "COEFF_B_LO_RE": {
-            "value": "-2037"
-          },
-          "N": {
-            "value": "100"
-          }
-        }
-      },
-      "axi_fsk_demod_2": {
-        "vlnv": "user.org:user:axi_fsk_demod:1.0",
-        "xci_name": "tdoa_axi_fsk_demod_0_6",
-        "xci_path": "ip/tdoa_axi_fsk_demod_0_6/tdoa_axi_fsk_demod_0_6.xci",
-        "inst_hier_path": "axi_fsk_demod_2",
-        "parameters": {
-          "COEFF_A": {
-            "value": "11994"
-          },
-          "COEFF_B_HI_IM": {
-            "value": "31476"
-          },
-          "COEFF_B_HI_RE": {
-            "value": "-7847"
-          },
-          "COEFF_B_LO_IM": {
-            "value": "32376"
-          },
-          "COEFF_B_LO_RE": {
-            "value": "-2037"
-          },
-          "N": {
-            "value": "100"
-          }
-        }
-      },
-      "axi_fsk_demod_3": {
-        "vlnv": "user.org:user:axi_fsk_demod:1.0",
-        "xci_name": "tdoa_axi_fsk_demod_0_7",
-        "xci_path": "ip/tdoa_axi_fsk_demod_0_7/tdoa_axi_fsk_demod_0_7.xci",
-        "inst_hier_path": "axi_fsk_demod_3",
-        "parameters": {
-          "COEFF_A": {
-            "value": "11994"
-          },
-          "COEFF_B_HI_IM": {
-            "value": "31476"
-          },
-          "COEFF_B_HI_RE": {
-            "value": "-7847"
-          },
-          "COEFF_B_LO_IM": {
-            "value": "32376"
-          },
-          "COEFF_B_LO_RE": {
-            "value": "-2037"
-          },
-          "N": {
-            "value": "100"
-          }
-        }
-      },
       "axis_broadcaster_1": {
         "vlnv": "xilinx.com:ip:axis_broadcaster:1.1",
         "xci_name": "tdoa_axis_broadcaster_0_1",
@@ -2013,12 +1912,6 @@
         "xci_name": "tdoa_axis_broadcaster_0_3",
         "xci_path": "ip/tdoa_axis_broadcaster_0_3/tdoa_axis_broadcaster_0_3.xci",
         "inst_hier_path": "axis_broadcaster_3"
-      },
-      "edge_detector_0": {
-        "vlnv": "user.org:user:edge_detector:1.0",
-        "xci_name": "tdoa_edge_detector_0_0",
-        "xci_path": "ip/tdoa_edge_detector_0_0/tdoa_edge_detector_0_0.xci",
-        "inst_hier_path": "edge_detector_0"
       },
       "system_ila_0": {
         "vlnv": "xilinx.com:ip:system_ila:1.1",
@@ -2233,6 +2126,218 @@
             "value": "7"
           }
         }
+      },
+      "axi_fsk_demod_0": {
+        "vlnv": "user.org:user:axi_fsk_demod:1.0",
+        "xci_name": "tdoa_axi_fsk_demod_0_4",
+        "xci_path": "ip/tdoa_axi_fsk_demod_0_4/tdoa_axi_fsk_demod_0_4.xci",
+        "inst_hier_path": "axi_fsk_demod_0",
+        "parameters": {
+          "COEFF_A": {
+            "value": "620"
+          },
+          "COEFF_B_HI_IM_0": {
+            "value": "999"
+          },
+          "COEFF_B_HI_IM_1": {
+            "value": "996"
+          },
+          "COEFF_B_HI_IM_2": {
+            "value": "993"
+          },
+          "COEFF_B_HI_RE_0": {
+            "value": "-216"
+          },
+          "COEFF_B_HI_RE_1": {
+            "value": "-229"
+          },
+          "COEFF_B_HI_RE_2": {
+            "value": "-241"
+          },
+          "COEFF_B_LO_IM_0": {
+            "value": "1021"
+          },
+          "COEFF_B_LO_IM_1": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_IM_2": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_RE_0": {
+            "value": "-51"
+          },
+          "COEFF_B_LO_RE_1": {
+            "value": "-64"
+          },
+          "COEFF_B_LO_RE_2": {
+            "value": "-77"
+          },
+          "N": {
+            "value": "500"
+          }
+        }
+      },
+      "axi_fsk_demod_1": {
+        "vlnv": "user.org:user:axi_fsk_demod:1.0",
+        "xci_name": "tdoa_axi_fsk_demod_0_8",
+        "xci_path": "ip/tdoa_axi_fsk_demod_0_8/tdoa_axi_fsk_demod_0_8.xci",
+        "inst_hier_path": "axi_fsk_demod_1",
+        "parameters": {
+          "COEFF_A": {
+            "value": "620"
+          },
+          "COEFF_B_HI_IM_0": {
+            "value": "999"
+          },
+          "COEFF_B_HI_IM_1": {
+            "value": "996"
+          },
+          "COEFF_B_HI_IM_2": {
+            "value": "993"
+          },
+          "COEFF_B_HI_RE_0": {
+            "value": "-216"
+          },
+          "COEFF_B_HI_RE_1": {
+            "value": "-229"
+          },
+          "COEFF_B_HI_RE_2": {
+            "value": "-241"
+          },
+          "COEFF_B_LO_IM_0": {
+            "value": "1021"
+          },
+          "COEFF_B_LO_IM_1": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_IM_2": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_RE_0": {
+            "value": "-51"
+          },
+          "COEFF_B_LO_RE_1": {
+            "value": "-64"
+          },
+          "COEFF_B_LO_RE_2": {
+            "value": "-77"
+          },
+          "N": {
+            "value": "500"
+          }
+        }
+      },
+      "axi_fsk_demod_2": {
+        "vlnv": "user.org:user:axi_fsk_demod:1.0",
+        "xci_name": "tdoa_axi_fsk_demod_0_9",
+        "xci_path": "ip/tdoa_axi_fsk_demod_0_9/tdoa_axi_fsk_demod_0_9.xci",
+        "inst_hier_path": "axi_fsk_demod_2",
+        "parameters": {
+          "COEFF_A": {
+            "value": "620"
+          },
+          "COEFF_B_HI_IM_0": {
+            "value": "999"
+          },
+          "COEFF_B_HI_IM_1": {
+            "value": "996"
+          },
+          "COEFF_B_HI_IM_2": {
+            "value": "993"
+          },
+          "COEFF_B_HI_RE_0": {
+            "value": "-216"
+          },
+          "COEFF_B_HI_RE_1": {
+            "value": "-229"
+          },
+          "COEFF_B_HI_RE_2": {
+            "value": "-241"
+          },
+          "COEFF_B_LO_IM_0": {
+            "value": "1021"
+          },
+          "COEFF_B_LO_IM_1": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_IM_2": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_RE_0": {
+            "value": "-51"
+          },
+          "COEFF_B_LO_RE_1": {
+            "value": "-64"
+          },
+          "COEFF_B_LO_RE_2": {
+            "value": "-77"
+          },
+          "N": {
+            "value": "500"
+          }
+        }
+      },
+      "axi_fsk_demod_3": {
+        "vlnv": "user.org:user:axi_fsk_demod:1.0",
+        "xci_name": "tdoa_axi_fsk_demod_0_10",
+        "xci_path": "ip/tdoa_axi_fsk_demod_0_10/tdoa_axi_fsk_demod_0_10.xci",
+        "inst_hier_path": "axi_fsk_demod_3",
+        "parameters": {
+          "COEFF_A": {
+            "value": "620"
+          },
+          "COEFF_B_HI_IM_0": {
+            "value": "999"
+          },
+          "COEFF_B_HI_IM_1": {
+            "value": "996"
+          },
+          "COEFF_B_HI_IM_2": {
+            "value": "993"
+          },
+          "COEFF_B_HI_RE_0": {
+            "value": "-216"
+          },
+          "COEFF_B_HI_RE_1": {
+            "value": "-229"
+          },
+          "COEFF_B_HI_RE_2": {
+            "value": "-241"
+          },
+          "COEFF_B_LO_IM_0": {
+            "value": "1021"
+          },
+          "COEFF_B_LO_IM_1": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_IM_2": {
+            "value": "1020"
+          },
+          "COEFF_B_LO_RE_0": {
+            "value": "-51"
+          },
+          "COEFF_B_LO_RE_1": {
+            "value": "-64"
+          },
+          "COEFF_B_LO_RE_2": {
+            "value": "-77"
+          },
+          "N": {
+            "value": "500"
+          }
+        }
+      },
+      "edge_detector_0": {
+        "vlnv": "user.org:user:edge_detector:1.0",
+        "xci_name": "tdoa_edge_detector_0_0",
+        "xci_path": "ip/tdoa_edge_detector_0_0/tdoa_edge_detector_0_0.xci",
+        "inst_hier_path": "edge_detector_0"
+      },
+      "led_debug_0": {
+        "vlnv": "user.org:user:led_debug:1.0",
+        "xci_name": "tdoa_led_debug_0_0",
+        "xci_path": "ip/tdoa_led_debug_0_0/tdoa_led_debug_0_0.xci",
+        "inst_hier_path": "led_debug_0"
       }
     },
     "interface_nets": {
@@ -2465,12 +2570,12 @@
           "util_vector_logic_0/Res",
           "axi_channel_demux_0/i_axis_rst",
           "axi_xadc_sampler_0/i_axis_rst",
-          "led_debug_0/i_axis_rst",
           "axi_fsk_demod_0/i_axis_rst",
           "axi_fsk_demod_1/i_axis_rst",
           "axi_fsk_demod_2/i_axis_rst",
           "axi_fsk_demod_3/i_axis_rst",
-          "edge_detector_0/i_axis_rst"
+          "edge_detector_0/i_axis_rst",
+          "led_debug_0/i_axis_rst"
         ]
       },
       "proc_sys_reset_0_peripheral_aresetn1": {
@@ -2502,16 +2607,16 @@
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/M01_ACLK",
-          "led_debug_0/i_axis_clk",
-          "axi_fsk_demod_0/i_axis_clk",
-          "axi_fsk_demod_1/i_axis_clk",
-          "axi_fsk_demod_2/i_axis_clk",
-          "axi_fsk_demod_3/i_axis_clk",
           "axis_broadcaster_3/aclk",
           "axis_broadcaster_2/aclk",
           "axis_broadcaster_1/aclk",
+          "system_ila_0/clk",
+          "axi_fsk_demod_0/i_axis_clk",
+          "axi_fsk_demod_3/i_axis_clk",
+          "axi_fsk_demod_2/i_axis_clk",
+          "axi_fsk_demod_1/i_axis_clk",
           "edge_detector_0/i_axis_clk",
-          "system_ila_0/clk"
+          "led_debug_0/i_axis_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {

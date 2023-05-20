@@ -36,24 +36,6 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_xbar_1
 # IP: bd/tdoa/ip/tdoa_ps7_0_axi_periph_0/tdoa_ps7_0_axi_periph_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_ps7_0_axi_periph_0 || ORIG_REF_NAME==tdoa_ps7_0_axi_periph_0} -quiet] -quiet
 
-# IP: bd/tdoa/ip/tdoa_led_debug_0_0/tdoa_led_debug_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_led_debug_0_0 || ORIG_REF_NAME==tdoa_led_debug_0_0} -quiet] -quiet
-
-# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_4/tdoa_axi_fsk_demod_0_4.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_4 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_4} -quiet] -quiet
-
-# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_5/tdoa_axi_fsk_demod_0_5.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_5 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_5} -quiet] -quiet
-
-# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_6/tdoa_axi_fsk_demod_0_6.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_6 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_6} -quiet] -quiet
-
-# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_7/tdoa_axi_fsk_demod_0_7.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_7 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_7} -quiet] -quiet
-
-# IP: bd/tdoa/ip/tdoa_edge_detector_0_0/tdoa_edge_detector_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_edge_detector_0_0 || ORIG_REF_NAME==tdoa_edge_detector_0_0} -quiet] -quiet
-
 # IP: bd/tdoa/ip/tdoa_axis_broadcaster_0_1/tdoa_axis_broadcaster_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axis_broadcaster_0_1 || ORIG_REF_NAME==tdoa_axis_broadcaster_0_1} -quiet] -quiet
 
@@ -107,6 +89,24 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==bd_a434_slo
 
 # IP: bd/tdoa/ip/tdoa_xlconstant_0_0/tdoa_xlconstant_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_xlconstant_0_0 || ORIG_REF_NAME==tdoa_xlconstant_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_4/tdoa_axi_fsk_demod_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_4 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_4} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_edge_detector_0_0/tdoa_edge_detector_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_edge_detector_0_0 || ORIG_REF_NAME==tdoa_edge_detector_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_led_debug_0_0/tdoa_led_debug_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_led_debug_0_0 || ORIG_REF_NAME==tdoa_led_debug_0_0} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_8/tdoa_axi_fsk_demod_0_8.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_8 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_8} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_9/tdoa_axi_fsk_demod_0_9.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_9 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_9} -quiet] -quiet
+
+# IP: bd/tdoa/ip/tdoa_axi_fsk_demod_0_10/tdoa_axi_fsk_demod_0_10.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_axi_fsk_demod_0_10 || ORIG_REF_NAME==tdoa_axi_fsk_demod_0_10} -quiet] -quiet
 
 # IP: bd/tdoa/ip/tdoa_auto_pc_1/tdoa_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==tdoa_auto_pc_1 || ORIG_REF_NAME==tdoa_auto_pc_1} -quiet] -quiet

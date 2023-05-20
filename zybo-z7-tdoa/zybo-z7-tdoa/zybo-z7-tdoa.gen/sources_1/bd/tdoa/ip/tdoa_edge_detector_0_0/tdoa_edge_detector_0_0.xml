@@ -898,11 +898,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 18 03:28:00 UTC 2023</spirit:value>
+            <spirit:value>Fri May 19 23:16:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:03c48b95</spirit:value>
+            <spirit:value>9:ea602192</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -913,7 +913,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:03c48b95</spirit:value>
+            <spirit:value>9:ea602192</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -929,11 +929,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 18 03:28:00 UTC 2023</spirit:value>
+            <spirit:value>Fri May 19 23:16:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:03c48b95</spirit:value>
+            <spirit:value>9:ea602192</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -948,11 +948,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 18 03:28:00 UTC 2023</spirit:value>
+            <spirit:value>Fri May 19 23:16:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3fe8c209</spirit:value>
+            <spirit:value>9:1f339db6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -968,11 +968,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 18 03:28:00 UTC 2023</spirit:value>
+            <spirit:value>Fri May 19 23:16:12 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:3fe8c209</spirit:value>
+            <spirit:value>9:1f339db6</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1248,12 +1248,19 @@
         </spirit:wire>
       </spirit:port>
     </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>THRESHOLD</spirit:name>
+        <spirit:displayName>Threshold</spirit:displayName>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.THRESHOLD">1000</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
   </spirit:model>
   <spirit:fileSets>
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagesynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/f209/edge_detector.v</spirit:name>
+        <spirit:name>../../ipshared/0fa5/edge_detector.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1268,7 +1275,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_anylanguagebehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>../../ipshared/f209/edge_detector.v</spirit:name>
+        <spirit:name>../../ipshared/0fa5/edge_detector.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
     </spirit:fileSet>
@@ -1287,12 +1294,17 @@
       <spirit:name>Component_Name</spirit:name>
       <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">tdoa_edge_detector_0_0</spirit:value>
     </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>THRESHOLD</spirit:name>
+      <spirit:displayName>Threshold</spirit:displayName>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.THRESHOLD">1000</spirit:value>
+    </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>edge_detector_v1_0</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
-      <xilinx:coreRevision>3</xilinx:coreRevision>
+      <xilinx:coreRevision>9</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_0.CLK_DOMAIN" xilinx:valueSource="default_prop" xilinx:valuePermission="bd_and_user"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.AXIS_0.FREQ_HZ" xilinx:valueSource="user_prop" xilinx:valuePermission="bd_and_user"/>
@@ -1367,9 +1379,10 @@
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="82849db9"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="73f0ce91"/>
-      <xilinx:checksum xilinx:scope="ports" xilinx:value="c3507674"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="3f2df808"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="4d08be19"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="8b818df2"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="fdf61acd"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e89e4eaf"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -2738,7 +2738,7 @@ If the number of packets received is one, then this register returns the value o
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:038509c3</spirit:value>
+            <spirit:value>9:97f01a72</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2749,7 +2749,7 @@ If the number of packets received is one, then this register returns the value o
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:038509c3</spirit:value>
+            <spirit:value>9:97f01a72</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2765,11 +2765,11 @@ If the number of packets received is one, then this register returns the value o
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 18 03:27:59 UTC 2023</spirit:value>
+            <spirit:value>Thu May 18 22:22:22 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:038509c3</spirit:value>
+            <spirit:value>9:97f01a72</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2800,7 +2800,7 @@ If the number of packets received is one, then this register returns the value o
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:a72481be</spirit:value>
+            <spirit:value>9:83b481eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2816,11 +2816,11 @@ If the number of packets received is one, then this register returns the value o
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Thu May 18 03:27:59 UTC 2023</spirit:value>
+            <spirit:value>Thu May 18 22:22:22 UTC 2023</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:a72481be</spirit:value>
+            <spirit:value>9:83b481eb</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4978,7 +4978,7 @@ If the number of packets received is one, then this register returns the value o
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RX_FIFO_DEPTH</spirit:name>
         <spirit:displayName>Rx Fifo Depth</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RX_FIFO_DEPTH">512</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RX_FIFO_DEPTH">4096</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="INTEGER">
         <spirit:name>C_TX_CASCADE_HEIGHT</spirit:name>
@@ -5003,7 +5003,7 @@ If the number of packets received is one, then this register returns the value o
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RX_FIFO_PF_THRESHOLD</spirit:name>
         <spirit:displayName>RX PF Threshold</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RX_FIFO_PF_THRESHOLD" spirit:minimum="10" spirit:maximum="131067" spirit:rangeType="long">507</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_RX_FIFO_PF_THRESHOLD" spirit:minimum="10" spirit:maximum="131067" spirit:rangeType="long">4091</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>C_RX_FIFO_PE_THRESHOLD</spirit:name>
@@ -5367,12 +5367,12 @@ If the number of packets received is one, then this register returns the value o
     <spirit:parameter>
       <spirit:name>C_RX_FIFO_PE_THRESHOLD</spirit:name>
       <spirit:displayName>Receive Fifo Programable Empty Threshold</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RX_FIFO_PE_THRESHOLD" spirit:order="1800" spirit:minimum="2" spirit:maximum="502" spirit:rangeType="long">5</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RX_FIFO_PE_THRESHOLD" spirit:order="1800" spirit:minimum="2" spirit:maximum="4086" spirit:rangeType="long">5</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_RX_FIFO_PF_THRESHOLD</spirit:name>
       <spirit:displayName>Receive Fifo Programable Full Threshold</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RX_FIFO_PF_THRESHOLD" spirit:order="1700" spirit:minimum="10" spirit:maximum="507" spirit:rangeType="long">507</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RX_FIFO_PF_THRESHOLD" spirit:order="1700" spirit:minimum="10" spirit:maximum="4091" spirit:rangeType="long">4091</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_TX_FIFO_PE_THRESHOLD</spirit:name>
@@ -5387,7 +5387,7 @@ If the number of packets received is one, then this register returns the value o
     <spirit:parameter>
       <spirit:name>C_RX_FIFO_DEPTH</spirit:name>
       <spirit:displayName>Receive Fifo Depth</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RX_FIFO_DEPTH" spirit:choiceRef="choice_list_cb97c1b0" spirit:order="1400">512</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_RX_FIFO_DEPTH" spirit:choiceRef="choice_list_cb97c1b0" spirit:order="1400">4096</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>C_TX_FIFO_DEPTH</spirit:name>
@@ -5642,6 +5642,9 @@ If the number of packets received is one, then this register returns the value o
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_HAS_AXIS_TDEST" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_HAS_AXIS_TID" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_HIGHADDR" xilinx:valueSource="propagated"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_RX_FIFO_DEPTH" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_RX_FIFO_PE_THRESHOLD" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_RX_FIFO_PF_THRESHOLD" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_S_AXI4_DATA_WIDTH" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_S_AXI_ID_WIDTH" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.C_USE_RX_CUT_THROUGH" xilinx:valueSource="user"/>
